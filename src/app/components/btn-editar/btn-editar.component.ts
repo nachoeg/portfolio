@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from 'src/app/services/auth.service';
 
 @Component({
   selector: 'app-btn-editar',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BtnEditarComponent implements OnInit {
 
-  constructor() { }
+  sesionIniciada: boolean;
+  constructor(private authService: AuthService) { 
+    this.sesionIniciada = authService.logIn
+  }
 
   ngOnInit(): void {
   }

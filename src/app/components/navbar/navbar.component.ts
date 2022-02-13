@@ -9,9 +9,9 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
-  ocultarBtn: boolean;
+  sesionIniciada: boolean;
   constructor(private authService: AuthService) { 
-    this.ocultarBtn = authService.logIn
+    this.sesionIniciada = authService.logIn
   }
 
   ngOnInit(): void {

@@ -64,7 +64,7 @@
             class="nav-button btn btn-outline-light mt-1 px-2 py-0"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
-            *ngIf="!ocultarBtn"
+            *ngIf="!sesionIniciada"
           >
             <span class="d-md-none me-1 "> Iniciar sesión</span>
             <i class="bi bi-box-arrow-in-right pe-1" style="font-size: 20px"></i>
@@ -72,7 +72,7 @@
           <button
             type="button"
             class="nav-button btn btn-outline-light mt-1 px-2 py-0"
-            *ngIf="ocultarBtn"
+            *ngIf="sesionIniciada"
           >
             <i class="bi bi-box-arrow-left pe-1" style="font-size: 20px"></i>
             <span class="d-md-none me-1 "> Cerrar sesión</span>
