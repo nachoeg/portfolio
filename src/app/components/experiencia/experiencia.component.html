@@ -1,0 +1,26 @@
+<div class="card bg-tarjetas  text-white mb-3">
+  <div class="card-header fw-bold text-center fs-5">Experiencia</div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let experiencia of listaExperiencias" class="list-group-item bg-transparent  text-white mt-1">
+        <div class="row mb-3">
+          <div class="col-3 my-auto">
+            <img class="img-fluid" [src]="experiencia.imagen" alt="">
+          </div>
+          <div class="col-9">
+            <button type="button" class="btn btn-light ms-1 float-end">
+              <i class="bi bi-pencil-square"></i>
+            </button>
+            <h5 class="card-title">
+              {{experiencia.lugar}}
+            </h5>
+            <p class="card-text">
+              {{experiencia.informacion}}
+            </p>
+            
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

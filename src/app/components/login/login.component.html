@@ -1,0 +1,76 @@
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-tarjetas text-light">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Iniciar sesión para modificar
+        </h5>
+        <button
+          type="button"
+          class="btn-close btn-close-white"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+        <div class="modal-body">
+          <!-- FORMULARIO -->
+
+          <div class="form-floating">
+            <input
+              type="email"
+              formControlName="email"
+              class="form-control bg-dark text-light"
+              id="floatingInput" 
+              placeholder="name@example.com"
+              [ngClass]="{'is-invalid': (Mail?.errors && Mail?.touched)}"
+            />
+            <label for="email" class="form-label">Correo electrónico</label>
+          </div>
+
+          <div *ngIf="Mail?.errors && Mail?.touched">
+            <p *ngIf="Mail?.hasError('required')" class="form-text text-danger mb-0">
+              Es necesario ingresar la direccion de correo.
+            </p>
+            <p *ngIf="Mail?.hasError('email')" class=" form-text text-danger mb-0">
+              El formato del correo es invalido.
+            </p>
+          </div>
+
+          <br />
+
+          <div class="form-floating">
+            <input
+            type="password"
+            formControlName="password"
+            class="form-control bg-dark text-light"
+            id="floatingPassword"
+            placeholder="Password"
+            [ngClass]="{'is-invalid': (Password?.errors && Password?.touched)}"
+            />
+            <label for="password" class="form-label">Constraseña</label>
+          </div>
+
+          <div *ngIf="Password?.errors && Password?.touched">
+            <p *ngIf="Password?.hasError('required')" class="form-text mb-0 text-danger">
+              Es necesario ingresar la contraseña.
+            </p>
+            <p *ngIf="Password?.errors?.['minlength']" class="form-text mb-0 text-danger">
+              La contraseña debe ser de 8 o más caracteres.
+            </p>
+          </div>
+        </div>
+
+        <div class="border-0 d-grid pt-2 p-3">
+          <button type="submit" class=" btn btn-primary " [ngClass]="{'disabled': (Mail?.errors || Password?.errors)}">Confirmar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

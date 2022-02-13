@@ -1,0 +1,86 @@
+{
+  "acercaDe": {
+    "nombre": "Ignacio Escudero Gonzalez",
+    "titulo": "Full Stack Developer Jr",
+    "descripcion": "Hola! Soy un programador junior de La Plata, con experiencia en desarrollo back-end, front-end y diseño.",
+    "gustos": "Me gusta leer, hacer música, deporte y aprender cosas nuevas.", 
+    "perfil": "./assets/images/fotoPerfilCuadrada.jpg",
+    "banner": "./assets/images/tumblr_p4jpsnKZQu1qze3hdo1_500.gif"
+  },
+  "experiencias": [
+    {
+      "lugar": "Google (2005-2009)",
+      "informacion": "Aquí colocarás toda la información de los lugares donde has trabajado, incluyendo título del puesto, periodo, logo de la empresa, si lo encontrás, y descripción de las actividades realizadas en ese puesto.",
+      "imagen": "https://rotulosmatesanz.com/wp-content/uploads/2017/09/2000px-Google_G_Logo.svg_.png"
+    },
+    {
+      "lugar": "Facebook (2009-2020)",
+      "informacion": "Aquí colocarás toda la información de los lugares donde has trabajado, incluyendo título del puesto, periodo, logo de la empresa, si lo encontrás, y descripción de las actividades realizadas ende has trabajado, incluyendo título del puesto, periodo, logo de la empresa, si lo encontrás, y descripción ese puestoas trabajado, incluyendo título del puesto, periodo, logo de la empresa, si lo encontrás, y descripción de las actividades realizadas en ese puesto.",
+      "imagen": "https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_(2019).svg"
+    },
+    {
+      "lugar": " Notion (2020)",
+      "informacion": "Aquí colocarás toda la información de los lugares donde has trabajado, y descripción de las actividades realizadas en ese puesto.",
+      "imagen": "https://makeplans.com/assets/img/integrations/notion.png"
+    },
+    {
+      "lugar": "Microsoft (2020-act)",
+      "informacion": "Aquí colocarás toda la información de los lugares donde has trabajado, incluyendo título del puesto, periodo, logo de la empresa, si lo título del puesto, periodo, logo de la empresa, si lo encontrás, y descripción de las actividades realizadas en ese puesto.",
+      "imagen": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEXz8/PzUyWBvAYFpvD/ugjz9fb19Pbz+fr39fr69vPy9foAofD/tgDzRQB9ugAAo/Df6dCv0Xjz2dPzTBfzl4PznImz04CAx/H60oHS5vJ5xPH60Hn16dIAnvDz7u3z4t7n7dzzNADzkXurz3BwtQDzvrLM36zf6/Os2PL336z07d/7z3RN8WfWAAABg0lEQVR4nO3cyVLCYBCFURwCkXlygDBFUBTf//3cSGIVf5WrDi7O9wJdp3p/Wy1JkvSrLLzqVDu8FHAzjW57JrZ34+hSH5yWg9jK187PrXx/GMZ2GF9+MZsObmKbzSvhZHgb25CQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCwUWE5i21QC/fB86Xp/dLt/DG4t/MGbf7+FNxkl9jZzTrR1TvCeXjJIWFJkv7uIbzqVDe8LAE8Lp+D+zgTu5/FS2zFKUFcrEex9ZaV8Ksf3Sol7N3FNqqFRf8+NkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQkJCQsJmhetebOtr75dmi+iO1anTKrrNJbDRsvCuDJQk6Z/1DSzvYqEfRCNJAAAAAElFTkSuQmCC"
+    }
+  ],
+  "educacion": [
+    {
+      "lugar": "Facultad de Informática UNLP",
+      "informacion": "Escribir toda la información de tu formación académica, certificaciones, cursos, y todo lo relacionado al título con que actualmente contás. Es importante detallar la información de la institución, el logo (de ser posible), nombre, carrera o título estudiado, y en qué periodo o año.",
+      "imagen": "./assets/images/facultad.png"
+    },
+    {
+      "lugar": "Instituto Superior Fray Mamerto Esquiu",
+      "informacion": "Escribir toda la información de tu formación académica, certificaciones, cursos, y todo lo relacionado al título con que actualmente contás. Es importante detallar la información de la institución, el logo (de ser posible), nombre, carrera o título estudiado, y en qué periodo o año.",
+      "imagen": "./assets/images/FME.png"
+    }
+  ],
+  "skills": [
+    {
+      "nombre": "Gestión del tiempo",
+      "porciento": "width: 80%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Inglés",
+      "porciento": "width: 70%",
+      "color": "bg-warning"
+    },
+    {
+      "nombre": "Creatividad",
+      "porciento": "width: 95%",
+      "color": "bg-success"
+    },
+    {
+      "nombre": "Trabajo en equipo",
+      "porciento": "width: 80%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Resolución de problemas",
+      "porciento": "width: 85%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Blockchain",
+      "porciento": "width: 15%",
+      "color": "bg-danger"
+    }
+  ],
+  "proyectos": [
+    {
+      "nombre": "Proyecto 1",
+      "informacion": "En esta sección deberá encontrarse la información sobre los proyectos que desarrollaste o en que te involucraste, incluyendo este portfolio web. Cada proyecto deberá contener el nombre, fecha de realización, descripción y el link a su evidencia. Además, podés ilustrar esta sección con imágenes de los proyectos."
+    },
+    {
+      "nombre": "Proyecto 2",
+      "informacion": "En esta sección deberá encontrarse la información sobre los proyectos que desarrollaste o en que te involucraste, incluyendo este portfolio web. Cada proyecto deberá contener el nombre, fecha de realización, descripción y el link a su evidencia. Además, podés ilustrar esta sección con imágenes de los proyectos."
+    }
+  ]
+}

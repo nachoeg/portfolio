@@ -1,0 +1,28 @@
+<div class="card bg-tarjetas text-white mb-3 text-center">
+  <img [src]="acercaDe.banner" class="card-img-top" alt="..." />
+  <button type="button" class="btn btn-light ms-1 botonEditar">
+    <i class="bi bi-pencil-square"></i>
+  </button>
+  <div class="card-header">
+    <img
+    [src]="acercaDe.perfil"
+    class="img-fluid border border-2 rounded-circle fotoPerfil"
+    height="150"
+    width="150"
+    alt=""
+    />
+    <div style="margin-top: -70px;">
+      <div class="align-self-center">
+        <h1>{{ acercaDe.nombre }}</h1>
+        <h5 class="fw-lighter font-monospace text-muted">
+          {{ acercaDe.titulo }}
+        </h5>
+        <div class="alert shadow-sm" style="background-color: #1d1d21;" role="alert">
+          {{ acercaDe.descripcion }}
+          {{ acercaDe.gustos}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

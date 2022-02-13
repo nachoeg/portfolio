@@ -1,0 +1,21 @@
+<div class="card bg-tarjetas text-white mb-3">
+  <div class="card-header fw-bold text-center fs-5">Proyectos</div>
+  <div class="card-body">
+    <ul class="list-group list-group-flush">
+      <li
+        *ngFor="let proyecto of listaProyectos"
+        class="list-group-item bg-transparent text-white py-3"
+      >
+        <button type="button" class="btn btn-light ms-1 float-end">
+          <i class="bi bi-pencil-square"></i>
+        </button>
+        <h5 class="card-title">
+          {{ proyecto.nombre }}
+        </h5>
+        <p class="card-text">
+          {{ proyecto.informacion }}
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>

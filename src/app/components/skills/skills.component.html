@@ -1,0 +1,20 @@
+<div class="card bg-tarjetas text-white mb-3">
+    <div class="card-header fw-bold text-center fs-5">Hard & Soft Skills</div>
+    <div class="card-body">
+      <div class="container">
+        <div class="row">
+          <div *ngFor="let skill of listaSkills" class="col-sm-6 mb-3 text-truncate">
+            <span class="text-center"> {{skill.nombre}} </span>
+            <div class="mt-2 progress bg-secondary ">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                [class]="skill.color"
+                role="progressbar"
+                [style]="skill.porciento"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
