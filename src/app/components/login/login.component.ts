@@ -12,6 +12,7 @@ export class LoginComponent implements OnInit {
   form: FormGroup;
 
 
+  //borrar el authservice?
   constructor(private authService: AuthService, private formBuilder: FormBuilder) {
     this.form = this.formBuilder.group({
       password: ['', [Validators.required, Validators.minLength(8)]],
