@@ -18,6 +18,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SwitchModeComponent } from './components/switch-mode/switch-mode.component';
 import { LoginComponent } from './components/login/login.component';
+import { BtnEditarComponent } from './components/btn-editar/btn-editar.component';
 
 
 @NgModule({
@@ -32,6 +33,7 @@ import { LoginComponent } from './components/login/login.component';
     FooterComponent,
     SwitchModeComponent,
     LoginComponent,
+    BtnEditarComponent,
   ],
   imports: [
     BrowserModule,

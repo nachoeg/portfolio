@@ -6,9 +6,7 @@
         *ngFor="let proyecto of listaProyectos"
         class="list-group-item bg-transparent text-white py-3"
       >
-        <button type="button" class="btn btn-light ms-1 float-end">
-          <i class="bi bi-pencil-square"></i>
-        </button>
+        <app-btn-editar></app-btn-editar>
         <h5 class="card-title">
           {{ proyecto.nombre }}
         </h5>
