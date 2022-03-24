@@ -1,5 +1,6 @@
 .efecto-blur {
-    background-color: #202023f9;
+    background-color: #121212f9;
+    /* background-color: #202023f9; */
     /* background-color: #15171aea; */
 }
 
@@ -15,6 +16,7 @@ nav > div {
         /* background-color: #21252960;
         background-color: #c7c7c715; */
         /* background-color: #15171a60; */
-        background-color: #20202360;
+        /* background-color: #20202360; */
+        background-color: #12121260;
     }
 }

@@ -6,6 +6,7 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
   templateUrl: './proyectos.component.html',
   styleUrls: ['./proyectos.component.css']
 })
+
 export class ProyectosComponent implements OnInit {
   listaProyectos:any;
 

@@ -1,13 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 .bg-principal {
-  background-color: #202023;
+  background-color: #121212;
   /* background-color: #15171a; */
 }
 
 
 .bg-tarjetas {
-  background-color: #1c1c20;
+  /* background-color: #1c1c20; */
+  background-color: #121212;
+  border-color: #25252500;
+}
+
+.border-tarjetas{
+  border-color: #25252500;
 }
 
 /* Barra de navegacion */
@@ -23,6 +29,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
   background: #555;
 }
 

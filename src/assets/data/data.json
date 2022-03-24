@@ -5,7 +5,7 @@
     "descripcion": "Hola! Soy un programador junior de La Plata, con experiencia en desarrollo back-end, front-end y diseño.",
     "gustos": "Me gusta leer, hacer música, deporte y aprender cosas nuevas.", 
     "perfil": "./assets/images/fotoPerfilCuadrada.jpg",
-    "banner": "./assets/images/tumblr_p4jpsnKZQu1qze3hdo1_500.gif"
+    "banner": "https://images.ctfassets.net/yr4qj72ki4ky/6G2JeQnM8bsnjgoJBjljCh/f30782e127727ee309ebf87fb59cf446/best-programming-languages-2020-Hero.jpg?q=72"
   },
   "experiencias": [
     {
@@ -33,49 +33,71 @@
     {
       "lugar": "Facultad de Informática UNLP",
       "informacion": "Escribir toda la información de tu formación académica, certificaciones, cursos, y todo lo relacionado al título con que actualmente contás. Es importante detallar la información de la institución, el logo (de ser posible), nombre, carrera o título estudiado, y en qué periodo o año.",
-      "imagen": "./assets/images/facultad.png"
+      "imagen": "./assets/images/facultad.png",
+      "link": "https://www.info.unlp.edu.ar/"
     },
     {
       "lugar": "Instituto Superior Fray Mamerto Esquiu",
       "informacion": "Escribir toda la información de tu formación académica, certificaciones, cursos, y todo lo relacionado al título con que actualmente contás. Es importante detallar la información de la institución, el logo (de ser posible), nombre, carrera o título estudiado, y en qué periodo o año.",
-      "imagen": "./assets/images/FME.png"
+      "imagen": "./assets/images/FME.png",
+      "link": "http://colegiosesquiu.com.ar/"
     }
   ],
   "skills": [
     {
-      "nombre": "Gestión del tiempo",
-      "porciento": "width: 80%",
+      "nombre": "Javascript",
+      "porciento": "width: 65%",
       "color": "bg-primary"
     },
     {
-      "nombre": "Inglés",
+      "nombre": "Css",
+      "porciento": "width: 75%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Java",
       "porciento": "width: 70%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Angular",
+      "porciento": "width: 50%",
       "color": "bg-warning"
     },
     {
+      "nombre": "Spring",
+      "porciento": "width: 40%",
+      "color": "bg-warning"
+    },
+    {
+      "nombre": "Inglés",
+      "porciento": "width: 60%",
+      "color": "bg-primary"
+    },
+    {
       "nombre": "Creatividad",
+      "porciento": "width: 75%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Resolución de problemas",
+      "porciento": "width: 70%",
+      "color": "bg-primary"
+    },
+    {
+      "nombre": "Gestión del tiempo",
       "porciento": "width: 95%",
       "color": "bg-success"
     },
     {
       "nombre": "Trabajo en equipo",
-      "porciento": "width: 80%",
+      "porciento": "width: 75%",
       "color": "bg-primary"
-    },
-    {
-      "nombre": "Resolución de problemas",
-      "porciento": "width: 85%",
-      "color": "bg-primary"
-    },
-    {
-      "nombre": "Blockchain",
-      "porciento": "width: 15%",
-      "color": "bg-danger"
     }
   ],
   "proyectos": [
     {
-      "nombre": "Proyecto 1",
+      "nombre": "Portfolio personal",
       "informacion": "En esta sección deberá encontrarse la información sobre los proyectos que desarrollaste o en que te involucraste, incluyendo este portfolio web. Cada proyecto deberá contener el nombre, fecha de realización, descripción y el link a su evidencia. Además, podés ilustrar esta sección con imágenes de los proyectos."
     },
     {
