@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { enable as enableDarkMode,
+  disable as disableDarkMode,
+  auto as followSystemColorScheme,
+  isEnabled as isDarkReaderEnabled,
+  auto
+} from 'darkreader';
 
 @Component({
   selector: 'app-switch-mode',
@@ -10,10 +16,24 @@ export class SwitchModeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    auto({
+      brightness: 100,
+      contrast: 90,
+      sepia: 10,
+  });
   }
 
   switchMode(){
-    
+    if (isDarkReaderEnabled()){
+      disableDarkMode();
+    }
+    else{
+      enableDarkMode({
+        brightness: 100,
+        contrast: 90,
+        sepia: 10,
+    });    
+    }
   }
   
 }

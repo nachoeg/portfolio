@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from 'src/app/services/auth.service';
+import { isEnabled as isDarkReaderEnabled } from 'darkreader';
 
 
 @Component({
@@ -9,9 +10,11 @@ import { AuthService } from 'src/app/services/auth.service';
 })
 export class NavbarComponent implements OnInit {
 
+  darkmode: boolean;
   sesionIniciada: boolean;
   constructor(private authService: AuthService) { 
     this.sesionIniciada = authService.logIn
+    this.darkmode = isDarkReaderEnabled();
   }
 
   ngOnInit(): void {

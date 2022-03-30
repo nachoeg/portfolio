@@ -1,19 +1,24 @@
 <!-- Barra de navegacion-->
-<nav class="navbar fixed-top p-0 navbar-expand-md navbar-dark efecto-blur " >
-  <div class="container-fluid py-2" style="max-width: 768px">
+<nav class="navbar fixed-top p-0 navbar-light navbar-expand-md efecto-blur">
+  <div class="container-fluid py-2" style="max-width: 800px">
     <a class="navbar-brand me-0 " href="#">
-      <img
+      <i class="bi bi-terminal-fill h3">
+
+      </i>
+      <span class="align-top">
+        Argentina Programa
+      </span>
+      <!-- <img
         src="/assets/images/logoArgetinaPrograma.png"
         alt=""
         width="30"
         height="25"
-        class="d-inline-block align-text-bottom me-1"
-      />
-        Argentina Programa
+        class="d-inline-block me-1 bg-dark rounded align-center"
+      /> -->
       <!-- <span class="d-none d-md-inline"> - #YoProgramo </span> -->
     </a>
     <button
-      class="navbar-toggler "
+      class="navbar-toggler border-dark"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent"
@@ -21,66 +26,55 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <i class="bi bi-list h1" style="line-height: 0"></i>
     </button>
     <div
       class="collapse navbar-collapse justify-content-end"
       id="navbarSupportedContent"
     >
-      <ul class="navbar-nav">
-        <li class="nav-item"><span class="navbar-text"></span></li>
-      </ul>
       <ul class="navbar-nav text-center">
-        <li class="nav-item d-md-none mt-4">
+        <li class="nav-item">
+          <app-switch-mode></app-switch-mode>
+        </li>
+        <li class="nav-item d-md-none mt-2">
           <span class="navbar-text"> Redes sociales </span>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://linkedin.com">
-            <img
-              class="d-inline-block align-text-bottom  me-md-0 me-1"
-              height="23"
-              width="23"
-              src="/assets/images/logoLinkedin.png"
-              alt=""
-            />
-            <span class="d-md-none text-light"> Linkedin </span>
+          <a class="nav-link text-dark" href="https://linkedin.com">
+            <i class="bi bi-linkedin"></i>
+            <span class="d-md-none"> Linkedin </span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="https://github.com/nachoeg">
-            <img
-              class="d-inline-block align-text-bottom me-md-0 me-1"
-              height="23"
-              width="23"
-              src="/assets/images/logoGithub.png"
-              alt=""
-            />
-            <span class="d-md-none text-light"> Github </span>
+          <a class="nav-link text-dark" href="https://github.com/nachoeg">
+            <i class="bi bi-github"></i>
+            <span class="d-md-none"> Github </span>
           </a>
         </li>
         <li class="nav-item mb-2 mt-4 ms-0 ms-md-2 mb-md-0 mt-md-0">
           <button
             type="button"
-            class="nav-button btn btn-dark mt-1 px-2 py-0"
+            class="nav-button btn btn-outline-dark mt-1 px-2 py-0"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             *ngIf="!sesionIniciada"
           >
-            <span class="d-md-none me-1 "> Iniciar sesión</span>
-            <i class="bi bi-box-arrow-in-right pe-1" style="font-size: 20px"></i>
+            <span class="d-md-none me-1"> Iniciar sesión</span>
+            <i
+              class="bi bi-box-arrow-in-right pe-1"
+              style="font-size: 20px"
+            ></i>
           </button>
           <button
             type="button"
-            class="nav-button btn btn-outline-light mt-1 px-2 py-0"
+            class="nav-button btn btn-outline-dark mt-1 px-2 py-0"
             *ngIf="sesionIniciada"
           >
             <i class="bi bi-box-arrow-left pe-1" style="font-size: 20px"></i>
-            <span class="d-md-none me-1 "> Cerrar sesión</span>
+            <span class="d-md-none me-1"> Cerrar sesión</span>
           </button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
-

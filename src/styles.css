@@ -1,39 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
 .bg-principal {
-  background-color: #121212;
-  /* background-color: #15171a; */
-}
-
-
-.bg-tarjetas {
-  /* background-color: #1c1c20; */
-  background-color: #121212;
-  border-color: #25252500;
-}
-
-.border-tarjetas{
-  border-color: #25252500;
-}
-
-/* Barra de navegacion */
-/* width */
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f100;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background: #555;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #888;
+  background-color: #fafafa;
 }

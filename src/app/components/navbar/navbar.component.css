@@ -1,9 +1,6 @@
 .efecto-blur {
-    background-color: #121212f9;
-    /* background-color: #202023f9; */
-    /* background-color: #15171aea; */
+    background-color: #fafafaef;
 }
-
 nav > div {
 
     box-shadow: 0px 30px 15px -26px #000000;;
@@ -13,10 +10,6 @@ nav > div {
     .efecto-blur {
         backdrop-filter: blur(20px);
 
-        /* background-color: #21252960;
-        background-color: #c7c7c715; */
-        /* background-color: #15171a60; */
-        /* background-color: #20202360; */
-        background-color: #12121260;
+        background-color: #fafafa70;
     }
 }

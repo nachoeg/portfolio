@@ -1,5 +1,5 @@
-<div class="card bg-tarjetas text-white mb-3">
-  <div class="card-header border-tarjetas fw-bold text-center fs-5">Hard & Soft Skills</div>
+<div class="card ">
+  <div class="card-header fw-bold text-center fs-5">Hard & Soft Skills</div>
   <div class="card-body">
     <div class="container">
       <div class="row">
@@ -7,7 +7,7 @@
           *ngFor="let skill of listaSkills"
           class="col-sm-6 mb-3 "
         >
-          <div class="mt-2 progress " style="height: 24px; background-color: #1e1e1e;">
+          <div class="mt-2 progress " style="height: 24px; background-color: rgba(0, 0, 0, 0.07);">
             <div
               class="progress-bar progress-bar-striped progress-bar-animated "
               [class]="skill.color"
