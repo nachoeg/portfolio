@@ -18,8 +18,8 @@ export class SwitchModeComponent implements OnInit {
   ngOnInit(): void {
     auto({
       brightness: 100,
-      contrast: 90,
-      sepia: 10,
+      contrast: 100,
+      sepia: 0,
   });
   }
 
@@ -30,8 +30,8 @@ export class SwitchModeComponent implements OnInit {
     else{
       enableDarkMode({
         brightness: 100,
-        contrast: 90,
-        sepia: 10,
+        contrast: 100,
+        sepia: 0,
     });    
     }
   }
