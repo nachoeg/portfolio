@@ -1,9 +1,17 @@
 ---
+import type { GetStaticPaths } from "astro";
 import Layout from "../../layouts/Layout.astro";
 import PROJECTS from "../../data/projects.js";
 import Tags from "../../components/Tags.astro";
 import Link from "../../components/Link.astro";
 import BackButton from "../../components/BackButton.astro";
+
+export const getStaticPaths = (() => {
+  const paths = PROJECTS.map((project) => ({
+    params: { project: project.id },
+  }));
+  return paths;
+}) satisfies GetStaticPaths;
 
 const { project } = Astro.params;
 
