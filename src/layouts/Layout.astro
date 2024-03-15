@@ -8,6 +8,7 @@ interface Props {
   description: string;
 }
 import { ViewTransitions } from "astro:transitions";
+import SpeedInsights from "@vercel/speed-insights/astro";
 
 const { title, description } = Astro.props;
 ---
@@ -32,6 +33,7 @@ const { title, description } = Astro.props;
       </slot>
     </Header>
     <slot />
+    <SpeedInsights />
 
     <Footer />
 
