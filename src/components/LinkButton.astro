@@ -1,0 +1,19 @@
+---
+const { href, expand, pill, disabled, small, target, rel } = Astro.props;
+---
+
+<a
+  href={href}
+  target={target}
+  rel={rel}
+  class=`${Astro.props.class}
+  ${expand ? 'w-full h-full':'h-fit max-w-fit'} 
+  ${small? "px-2 py-1":"px-3 py-2"} 
+  ${pill ? 'rounded-full' : 'rounded-xl '} 
+  ${disabled ? 
+    'pointer-events-none bg-neutral-300 text-neutral-400 dark:bg-neutral-800 dark:text-neutral-700'  :   
+  'text-neutral-800  bg-neutral-50/90 dark:text-neutral-100 dark:bg-neutral-50/10 dark:hover:bg-neutral-50/20 active:bg-neutral-300/90  dark:active:bg-neutral-500 focus-visible:ring-yellow-500/80 hover:bg-neutral-200/90 focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2'} 
+  relative text-nowrap inline-flex  items-center justify-center gap-1 sm:gap-2 text-xs sm:text-base shadow-lg transition  text-md`
+>
+  <slot />
+</a>

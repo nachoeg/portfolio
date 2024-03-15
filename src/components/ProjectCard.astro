@@ -1,0 +1,78 @@
+---
+import GitHub from "../icons/Github.astro";
+import Arrow from "../icons/Arrow.astro";
+import Link from "../icons/Link.astro";
+import LinkButton from "./LinkButton.astro";
+import Tooltip from "./Tooltip.astro";
+import { Image } from "astro:assets";
+const { id, image, title, description, tags, link, github, projectLink } =
+  Astro.props;
+import Tags from "./Tags.astro";
+---
+
+<article
+  class={"group max-h-[550px] flex-auto flex relative flex-col  flex-grow rounded-3xl text-end duration-300  bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-neutral-900 dark:text-white hover:shadow-2xl shadow-xl animation-reveal-scroll"}
+  transition:name={`project${id}`}
+>
+  <div class="overflow-hidden rounded-3xl h-full">
+    <a href={projectLink} class="flex flex-col h-full justify-between">
+      <div class="p-6 md:p-10 flex-grow">
+        <h1 class="text-2xl font-bold" transition:name={`titleProject${id}`}>
+          {title}
+        </h1>
+        <div class="mt-1 justify-end">
+          <div
+            class="text-gray-700 dark:text-gray-400 hidden md:block text-balance"
+            transition:name={`descriptionProject${id}`}
+          >
+            {description}
+          </div>
+          <Tags classList="justify-end" tags={tags} />
+        </div>
+      </div>
+      <div
+        class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform"
+      >
+        <Image
+          alt={title}
+          width="200"
+          height="200"
+          transition:name=`imageProject${id}`
+          loading={"eager"}
+          class="object-cover h-full w-full object-left-top rounded-xl transition duration-500 translate-x-6 sm:translate-x-16 translate-y-0 group-hover:scale-100 group-hover:translate-x-5 lg:group-hover:-translate-y-0 scale-105"
+          src={image}
+        />
+      </div>
+    </a>
+  </div>
+  <div
+    class="absolute top-6 left-6 flex items-end lg:justify-end gap-x-3 opacity-0 group-hover:opacity-100 duration-300"
+  >
+    <Tooltip down content="Más información">
+      <LinkButton href={projectLink}>
+        <div class="sr-only">Más información</div>
+        <Arrow class="size-6" />
+      </LinkButton>
+    </Tooltip>
+    {
+      github && (
+        <Tooltip down content="Ver código">
+          <LinkButton rel="noopener" target="_blank" href={github}>
+            <GitHub class="size-6" />
+            <div class="sr-only">Github</div>
+          </LinkButton>
+        </Tooltip>
+      )
+    }
+    {
+      link && (
+        <Tooltip down content="Web del proyecto">
+          <LinkButton rel="noopener" target="_blank" href={link}>
+            <div class="sr-only">Web del proyecto</div>
+            <Link class="size-6" />
+          </LinkButton>
+        </Tooltip>
+      )
+    }
+  </div>
+</article>

@@ -1,0 +1,11 @@
+---
+const { id } = Astro.props;
+---
+
+<section
+  id={id}
+  data-section={id}
+  class={`scroll-m-20 relative w-full mx-auto pb-24 sm:pb-40 lg:max-w-4xl md:max-w-2xl `}
+>
+  <slot />
+</section>

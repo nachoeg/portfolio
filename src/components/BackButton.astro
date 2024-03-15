@@ -1,0 +1,13 @@
+---
+import Tooltip from "../components/Tooltip.astro";
+import ArrowLeft from "../icons/ArrowLeft.astro";
+---
+
+<Tooltip content="Volver">
+  <button
+    onclick="history.back();"
+    class="appearance-none border-none flex ms-1 me-1 hover:scale-125 gap-1 transition-all hover:text-black hover:bg-white hover:shadow dark:hover:text-white dark:hover:bg-white/10 rounded-full p-[2px]"
+  >
+    <ArrowLeft class="size-6 transition-all" />
+  </button>
+</Tooltip>

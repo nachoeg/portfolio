@@ -1,0 +1,43 @@
+---
+import SectionContainer from "../../components/SectionContainer.astro";
+import Layout from "../../layouts/Layout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import PROJECTS from "../../data/projects.js";
+import SectionTitle from "../../components/SectionTitle.astro";
+---
+
+<Layout title="Proyectos" description="Lista completa de proyectos">
+  <main class="px-4 pt-36">
+    <SectionContainer>
+      <SectionTitle>Proyectos</SectionTitle>
+
+      <div class="grid sm:grid-cols-2 gap-8 relative">
+        {
+          PROJECTS.map(
+            ({
+              id,
+              image,
+              title,
+              description,
+              tags,
+              link,
+              github,
+              projectLink,
+            }) => (
+              <ProjectCard
+                id={id}
+                image={image}
+                title={title}
+                description={description}
+                tags={tags}
+                link={link}
+                github={github}
+                projectLink={projectLink}
+              />
+            )
+          )
+        }
+      </div>
+    </SectionContainer>
+  </main>
+</Layout>

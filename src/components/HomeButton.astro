@@ -1,0 +1,14 @@
+---
+import IE from "../icons/IE.astro";
+---
+
+<button {...Astro.props} onclick="goTop()">
+  <IE width="24" height="24" />
+</button>
+
+<script is:inline>
+  const goTop = () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  };
+</script>

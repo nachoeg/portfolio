@@ -1,0 +1,14 @@
+---
+const { href, target, rel } = Astro.props;
+import LinkIcon from "../icons/Link.astro";
+---
+
+<a
+  target={target}
+  rel={rel}
+  href={href}
+  class="font-medium text-blue-600 dark:text-blue-500 hover:underline inline-flex gap-1 items-center"
+>
+  <slot />
+  <LinkIcon class="size-4" />
+</a>

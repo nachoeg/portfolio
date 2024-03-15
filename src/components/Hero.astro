@@ -1,0 +1,35 @@
+---
+import ProfileCard from "./ProfileCard.astro";
+---
+
+<div
+  class="flex flex-col sm:flex-row w-full pt-24 sm:pt-40 text-center sm:text-left gap-10 sm:gap-0 justify-center"
+>
+  <div class="my-auto">
+    <h3
+      class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] text-neutral-950 dark:text-white animation-reveal flex place-items-center place-content-center sm:place-content-start gap-2"
+    >
+      Hola
+      <span class="text-3xl xs:text-4xl md:text-5xl lg:text-6xl animation-shake"
+        >👋</span
+      >
+    </h3>
+    <h1
+      class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] mb-6 md:mb-8 font-bold tracking-tight text-neutral-950 dark:text-white text-balance animation-reveal animation-delay-3"
+    >
+      Mi nombre <br /> es <span class="gradientText animation-backgroundShift"
+        >Ignacio</span
+      >.
+    </h1>
+    <p
+      class="md:text-xl text-lg max-w-[30ch] mx-auto md:mx-0 text-neutral-700 dark:text-neutral-400 text-balance md:text-wrap animation-reveal animation-delay-6"
+    >
+      <strong> Analista programador universitario</strong>
+      de Buenos Aires, Argentina 🇦🇷.
+      <!-- Especializado en el desarrollo de aplicaciones web únicas. -->
+    </p>
+  </div>
+  <ProfileCard />
+</div>
+
+<style></style>

@@ -1,0 +1,125 @@
+---
+import Code from "../icons/Code.astro";
+import Mail from "../icons/Mail.astro";
+import Profile from "../icons/Profile.astro";
+const navItems = [
+  {
+    title: "Proyectos",
+    label: "projects",
+    icon: Code,
+    url: "/#projects",
+  },
+  {
+    title: "Sobre mí",
+    label: "about",
+    icon: Profile,
+    url: "/#about",
+  },
+  {
+    title: "Contacto",
+    label: "contact",
+    icon: Mail,
+    url: "/#contact",
+  },
+];
+---
+
+<nav class="relative flex font-medium rounded-full justify-center items-center">
+  {
+    navItems.map((link) => (
+      <a
+        class=" w-[4.5rem] xs:w-20 sm:w-28  text-center py-2 flex   sm:text-base text-xs  hover:text-black dark:hover:text-white items-center  justify-center  text-nowrap duration-300 transition-all"
+        aria-label={link.label}
+        href={link.url}
+      >
+        <link.icon class="hidden  size-5" />
+        {link.title}
+      </a>
+    ))
+  }
+  <div class="backgroundSelected bg-white dark:bg-white/10"></div>
+</nav>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const sections = document.querySelectorAll("section");
+    const navItems = document.querySelectorAll("header nav a");
+
+    const callback = (entries: any[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          navItems.forEach((item) => {
+            if (item.getAttribute("aria-label") == entry.target.id) {
+              item.classList.add("selected");
+            } else {
+              item.classList.remove("selected");
+            }
+          });
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.2,
+    });
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    // Cleanup function
+    document.onvisibilitychange = () => {
+      if (document.visibilityState === "hidden") {
+        observer.disconnect();
+      } else {
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      }
+    };
+  });
+</script>
+
+<style>
+  .selected {
+    @apply text-black dark:text-white;
+  }
+
+  [aria-label="projects"]:is(.selected) ~ .backgroundSelected {
+    left: 0;
+  }
+
+  [aria-label="about"]:is(.selected) ~ .backgroundSelected {
+    left: 33.3%;
+  }
+
+  [aria-label="contact"]:is(.selected) ~ .backgroundSelected {
+    left: 66.6%;
+  }
+
+  .backgroundSelected {
+    height: 100%;
+    width: 33%;
+    position: absolute;
+    border-radius: 100px;
+    pointer-events: none;
+    left: 0;
+    z-index: -1;
+    @apply shadow;
+    box-sizing: border-box;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.51, 0, 0.44, 1.28);
+    animation: background-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 200px;
+    opacity: 0;
+  }
+
+  @keyframes background-shadown {
+    to {
+      opacity: 1;
+    }
+  }
+</style>
