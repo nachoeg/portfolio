@@ -9,7 +9,7 @@ const PROJECTS = [
     link: "/",
     projectLink: "/projects/portfolio",
     github: "",
-    image: "/src/assets/portfolio.webp",
+    image: "/assets/portfolio.webp",
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
   },
   {
@@ -21,7 +21,7 @@ const PROJECTS = [
     link: "",
     github: "https://github.com/nachoeg/ohmydog-frontend",
     projectLink: "/projects/ohmydog",
-    image: "/src/assets/ohmydog.jpg",
+    image: "/assets/ohmydog.jpg",
     tags: [TAGS.REACT, TAGS.MUI, TAGS.QUARKUS],
   },
   {
@@ -32,7 +32,7 @@ const PROJECTS = [
     link: "https://portal-juegos.onrender.com/",
     github: "https://github.com/nachoeg/portal-juegos",
     projectLink: "/projects/portal-de-juegos",
-    image: "/src/assets/portal-de-juegos.jpg",
+    image: "/assets/portal-de-juegos.jpg",
     tags: [TAGS.EXPRESS, TAGS.JS, TAGS.CSS, TAGS.HTML],
   },
 ];
