@@ -4,9 +4,10 @@ import Language from "../icons/Language.astro";
 ---
 
 <div class="relative ml-1 mr-1">
-  <Tooltip content="Elegir idioma">
+  <Tooltip content="Elegir idioma aún no esta disponible">
     <button
       id="language-toggle-btn"
+      disabled
       class="appearance-none border-none flex ransition-all p-1 rounded-full duration-100
       hover:scale-125 hover:text-black hover:bg-white hover:shadow
       dark:hover:text-white dark:hover:bg-white/10
@@ -19,7 +20,6 @@ import Language from "../icons/Language.astro";
     </button>
   </Tooltip>
 </div>
-
 <script is:inline>
   // const getLanguagePreference = () => {
   //   if (typeof localStorage !== "undefined") {
