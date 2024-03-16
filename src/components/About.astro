@@ -1,84 +1,63 @@
 ---
+import Tags from "./Tags.astro";
+import STACK from "@/data/stack";
 const personalImageAlt = "Ignacio Escudero Gonzalez";
+function calculateAge(dob: Date) {
+  let diffMs = Date.now() - dob.getTime();
+  let ageDt = new Date(diffMs);
+  return Math.abs(ageDt.getUTCFullYear() - 1970);
+}
+
+const edad = calculateAge(new Date(1999, 5, 4));
 ---
 
 <article
-  class="flex flex-col justify-center gap-8 text-gray-700 dark:text-gray-300 sm:flex-row"
+  class="flex flex-col justify-center gap-4 text-neutral-800 dark:text-neutral-300 sm:flex-row"
 >
   <div
-    class="[&>p]:mb-4 [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-normal [&>p>strong]:font-mono text-pretty order-2 sm:order-2"
+    class="space-y-4 [&_h6]:font-semibold [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold text-pretty order-2 sm:order-2"
   >
-    <p class="animation-reveal-scroll">
-      Me llamo Ignacio Escudero Gonzalez pero mis amigos me llaman Nacho. Empecé
-      en la programación con un Amstrad, tenía 10 años. Actualmente estoy <strong
-        >liderando equipos de desarrollo en multinacionales</strong
-      >.
-    </p>
+    <div class="animation-reveal-scroll">
+      <h6>Mi historia</h6>
+      <p>
+        Mi nombre es Ignacio, tengo {edad} años y soy de Buenos Aires, Argentina.
+        Antes del desarrollo de software estudié carreras de distintas areas, hasta
+        que finalmente encontré mi lugar en el mundo de la programación.
+      </p>
+    </div>
 
     <p class="animation-reveal-scroll">
-      Algunos de mis éxitos incluyen <strong
-        >colaborar con Mozilla para el desarrollo de las primeras apps en su
-        sistema FirefoxOS</strong
-      >. Aunque hoy está desaparecido fue un gran avance en el mundo del
-      desarrollo web.
+      En el año 2025 me gradué de <strong
+        >Analista Programador Universitario</strong
+      >
+      en la Universidad Nacional de La Plata, y actualmente estoy estudiando una
+      Licenciatura en Sistemas.
     </p>
-
-    <p class="animation-reveal-scroll">
-      Como creador de contenido, <strong
-        >cuento con el canal de habla hispana más visto del mundo en la
-        categoría de <em class="italic">Software & Game Development</em> en Twitch</strong
-      >. Mi objetivo es mejorar la empleabilidad de la comunidad hispana y el
-      acceso a contenido de calidad.
-    </p>
+    <div class="animation-reveal-scroll">
+      <h6>Tecnologias</h6>
+      <Tags tags={STACK} />
+    </div>
+    <div class="animation-reveal-scroll">
+      <h6>Hobbies</h6>
+      <p>
+        La música me apasiona. Disfruto tanto escuchándola como tocándola, y a
+        veces incluso
+        <a
+          class="underline text-blue-600"
+          rel="noopener"
+          target="_blank"
+          href="https://soundcloud.com/nacho-escudero-g/">produciendo</a
+        >! En mi tiempo libre me gusta leer, y también entrenar y hacer deporte,
+        en especial el fútbol y el basket.
+      </p>
+    </div>
   </div>
 
-  <img
-    src="/assets/foto-perfil.jpg"
-    alt={personalImageAlt}
-    class="md:self-start order-1 object-cover object-bottom max-w-[400px] sm:min-w-[300px] w-full h-full md:max-w-64 sm:order-1 p-2 lg:w-64 aspect-square rounded-3xl shadow-xl bg-black/10 dark:bg-white/10 animation-reveal-scroll"
-  />
+  <div class="w-full max-w-[400px] sm:max-w-[300px] md:max-w-[270px]">
+    <img
+      src="/assets/foto-perfil.jpg"
+      alt={personalImageAlt}
+      class="md:self-start order-1 sm:order-1 object-cover object-bottom w-full h-full p-2 rounded-3xl shadow-xl bg-black/10 dark:bg-white/10 animation-reveal-scroll"
+    />
+  </div>
 </article>
-
-<!-- FRASES PROHIBIDAS EN VUESTRO PORTFOLIO
-
-<p>
-  Mi sueño es encontrar mi primer empleo en el mundo de la programación. Una empresa donde pueda seguir aprendiendo. ❌
-</p>
-
-<p>
-  ❌ Apasionado de la programación desde chekitito. Me encantan los ordenadores y crear páginas web buenas y rápidas con la última tecnología.
-</p>
-
-<p>
-  Trabajo bien en equipo. Siempre estoy aprendiendo cosas nuevas.
-</p>
-
--------------------------------------
-
---------------------------------------
-
-<p>
-  ¡Soy Leo! Estudié Derecho Empresarial y, tras años ejerciendo, me pasé al mundo de la Programación. Desde entonces disfruto creando experiencias web para los usuarios.
-</p>
-
-<p>
-  Entre mis éxitos destaco que durante el Grado Superior, ayudé a mis compañeros a aprender sobre TDD. Me encanta el testing, creo en su importancia, y me gusta compartir mi conocimiento sobre ello.
-</p>
-
-<p>
-  Cuento con experiencia desarrollando aplicaciones móviles, y he creado una iniciativa llamada X para mezclar mis dos pasiones: la programación y el derecho. Ayudando a la sociedad a acceso a una defensa justa.
-</p>
-
----------------------------------------
-
-<p>Me llamo Sara, tengo 25 años y soy de Santiago, Chile 🇨🇱. Terminé mis estudios como Desarrolladora Web. Me encanta enfocarme en la parte del rendimiento, para ofrecer la mejora experiencia al usuario.</p>
-
-<p>
-  Colaboro en la organización del MeetUp local BeerJS donde reunimos a desarrolladores de Santiago para compartir conocimiento y experiencias. El año 2023 hicimos un total de 25 charlas con más de 2000 asistentes.
-</p>
-
-<p>
-  Además de participar activamente en la comunidad, he participado en la Hackathon de Midudev quedando en 3er puesto con mi proyecto _Chatty_, donde usando IA podías interactuar con un PDF. ¡Échale un vistazo!
-</p>
-
--->
