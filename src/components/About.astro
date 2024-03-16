@@ -15,7 +15,7 @@ const edad = calculateAge(new Date(1999, 5, 4));
   class="flex flex-col justify-center gap-4 text-neutral-800 dark:text-neutral-300 sm:flex-row"
 >
   <div
-    class="space-y-4 [&_h6]:font-semibold [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold text-pretty order-2 sm:order-2"
+    class="flex flex-col gap-4 [&_h6]:font-semibold [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold text-pretty order-2 sm:order-2"
   >
     <div class="animation-reveal-scroll">
       <h6>Mi historia</h6>
@@ -26,17 +26,21 @@ const edad = calculateAge(new Date(1999, 5, 4));
       </p>
     </div>
 
-    <p class="animation-reveal-scroll">
-      En el año 2025 me gradué de <strong
-        >Analista Programador Universitario</strong
-      >
-      en la Universidad Nacional de La Plata, y actualmente estoy estudiando una
-      Licenciatura en Sistemas.
-    </p>
+    <div class="animation-reveal-scroll">
+      <p>
+        En el año 2025 me gradué de <strong
+          >Analista Programador Universitario</strong
+        >
+        en la Universidad Nacional de La Plata, y actualmente estoy estudiando una
+        Licenciatura en Sistemas.
+      </p>
+    </div>
+
     <div class="animation-reveal-scroll">
       <h6>Tecnologias</h6>
       <Tags tags={STACK} />
     </div>
+
     <div class="animation-reveal-scroll">
       <h6>Hobbies</h6>
       <p>
