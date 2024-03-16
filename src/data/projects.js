@@ -11,6 +11,7 @@ const PROJECTS = [
     github: "",
     image: "/assets/portfolio.webp",
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
+    selected: true,
   },
   {
     id: "ohmydog",
@@ -23,6 +24,7 @@ const PROJECTS = [
     projectLink: "/projects/ohmydog",
     image: "/assets/ohmydog.jpg",
     tags: [TAGS.REACT, TAGS.MUI, TAGS.QUARKUS],
+    selected: true,
   },
   {
     id: "portal-de-juegos",
@@ -34,6 +36,7 @@ const PROJECTS = [
     projectLink: "/projects/portal-de-juegos",
     image: "/assets/portal-de-juegos.jpg",
     tags: [TAGS.EXPRESS, TAGS.JS, TAGS.CSS, TAGS.HTML],
+    selected: false,
   },
 ];
 

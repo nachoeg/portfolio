@@ -5,7 +5,7 @@ import PROJECTS from "../data/projects.js";
 
 <div class="flex flex-wrap gap-16 relative">
   {
-    PROJECTS.map(
+    PROJECTS.filter((p) => p.selected).map(
       ({ id, image, title, description, tags, link, github, projectLink }) => (
         <ProjectCard
           id={id}
