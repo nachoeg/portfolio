@@ -237,6 +237,39 @@ const { title, description } = Astro.props;
           transform: rotate(2deg);
         }
       }
+
+      @keyframes incline-topright {
+        0% {
+          --rotateX: 25deg;
+          --rotateY: 25deg;
+        }
+        100% {
+          --rotateX: 0;
+          --rotateY: 0;
+        }
+      }
+
+      @keyframes incline-none {
+        100% {
+          transform-style: preserve-3d;
+          transform: perspective(500px) rotateX(0) rotateY(0);
+        }
+      }
+
+      @keyframes wave {
+        0% {
+          transform: translateZ(0);
+          transform-style: preserve-3d;
+        }
+        50% {
+          transform: translateZ(60px);
+          transform-style: preserve-3d;
+        }
+        100% {
+          transform: translateZ(0);
+          transform-style: preserve-3d;
+        }
+      }
     </style>
 
     <script

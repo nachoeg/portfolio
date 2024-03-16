@@ -59,10 +59,9 @@ import Tooltip from "./Tooltip.astro";
     place-self: center;
     /* outline: 4px dotted blue; */
     animation:
-      slide-right both,
-      fade-in both;
-    animation-duration: 1.2s;
-    animation-delay: 0.8s;
+      1.2s slide-right 0s both,
+      1.2s fade-in 0.2s both,
+      2.4s incline-topright both 1.2s ease-in-out;
   }
 
   #profileCard {
@@ -113,6 +112,25 @@ import Tooltip from "./Tooltip.astro";
       grow 2s cubic-bezier(0, 0, 0, 1) 1.8s both,
       glow 2s ease-in 4s infinite both alternate;
   }
+  #profileCard::after {
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    scale: 1;
+    background: linear-gradient(
+      43deg,
+      rgb(65, 88, 208) 0%,
+      rgb(200, 80, 192) 46%,
+      rgb(255, 204, 112) 100%
+    );
+    /* @apply bg-neutral-500; */
+    opacity: 0.5;
+    transition: all 300ms;
+    transform: translateZ(-60px);
+  }
 
   .tracker:hover ~ #profileCard > img {
     transform: translateZ(60px);
@@ -128,6 +146,28 @@ import Tooltip from "./Tooltip.astro";
 
   .tracker:hover ~ #profileCard > .cardFooter {
     transform: translateZ(20px);
+  }
+
+  img,
+  h1,
+  span,
+  .cardFooter {
+    animation: wave ease;
+    animation-duration: 0.6s;
+  }
+
+  img {
+    animation-delay: 0.8s;
+  }
+
+  h1 {
+    animation-delay: 0.9s;
+  }
+  span {
+    animation-delay: 0.9s;
+  }
+  .cardFooter {
+    animation-delay: 1s;
   }
 
   .tracker {
