@@ -8,7 +8,7 @@ const PROJECTS = [
     description: "Este sitio web.",
     link: "/",
     projectLink: "/projects/portfolio",
-    github: "",
+    github: "https://github.com/nachoeg/portfolio",
     image: "/assets/portfolio.webp",
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
     selected: true,
