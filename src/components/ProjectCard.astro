@@ -54,7 +54,7 @@ import Tags from "./Tags.astro";
     </Tooltip>
     {
       github && (
-        <Tooltip down content="Ver código">
+        <Tooltip down content="Ver código fuente">
           <LinkButton rel="noopener" target="_blank" href={github}>
             <GitHub class="size-6" />
             <div class="sr-only">Github</div>
@@ -64,9 +64,9 @@ import Tags from "./Tags.astro";
     }
     {
       link && (
-        <Tooltip down content="Demo del proyecto">
+        <Tooltip down content="Ir al Sitio web">
           <LinkButton rel="noopener" target="_blank" href={link}>
-            <div class="sr-only">Demo del proyecto</div>
+            <div class="sr-only">Ir al Sitio web</div>
             <Link class="size-6" />
           </LinkButton>
         </Tooltip>
