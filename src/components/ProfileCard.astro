@@ -17,7 +17,7 @@ import Tooltip from "./Tooltip.astro";
   <div class="tracker"></div>
   <div class="tracker"></div>
 
-  <div id="profileCard" class="profileCard">
+  <div id="profileCard">
     <img
       class="rounded-full shadow-xl p-1 mb-4 mt-2 size-40 lg:size-48"
       src="/assets/foto-perfil.jpg"
@@ -39,9 +39,10 @@ import Tooltip from "./Tooltip.astro";
           rel="noopener"
           target="_blank"
           href="mailto:ignacioescuderogonzalez@gmail.com"
+          class="bg-blue-100 hover:bg-blue-200 active:bg-blue-200 dark:bg-blue-950 hover:dark:bg-blue-900 active:dark:bg-blue-900"
         >
           <span class="sr-only">Boton de contacto</span>
-          <Mail class="size-5" />
+          <Mail class="size-5 stroke-blue-600 dark:stroke-blue-300" />
         </LinkButton>
       </Tooltip>
     </div>
@@ -65,7 +66,7 @@ import Tooltip from "./Tooltip.astro";
   }
 
   #profileCard {
-    @apply p-4 rounded-3xl bg-neutral-300 dark:bg-neutral-900;
+    @apply p-4 rounded-3xl bg-neutral-200 dark:bg-neutral-900;
     display: flex;
     position: relative;
     flex-direction: column;
