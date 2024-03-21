@@ -11,7 +11,7 @@ import Tags from "./Tags.astro";
 ---
 
 <article
-  class={"group max-h-[550px] flex-auto flex relative flex-col  flex-grow rounded-3xl text-end duration-300  bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-neutral-900 dark:text-white hover:shadow-xl shadow-lg animation-reveal-scroll"}
+  class={"group max-h-[550px] flex-auto flex relative flex-col  flex-grow rounded-3xl text-end duration-300  bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-neutral-900 dark:text-white hover:shadow-xl shadow-lg animation-reveal-scroll  overflow-hidden"}
   transition:name={`project${id}`}
 >
   <div class="overflow-hidden rounded-3xl h-full">
@@ -37,7 +37,7 @@ import Tags from "./Tags.astro";
           alt={title}
           transition:name=`imageProject${id}`
           loading={"eager"}
-          class="object-cover h-full w-full object-left-top rounded-xl transition duration-500 translate-x-6 sm:translate-x-16 translate-y-0 group-hover:scale-100 group-hover:translate-x-5 lg:group-hover:-translate-y-0 scale-105"
+          class="object-cover h-full w-full object-left-top rounded-xl transition duration-500 translate-x-6 sm:translate-x-16 translate-y-0 group-hover:scale-100 group-hover:translate-x-5 lg:group-hover:-translate-y-0 scale-105 group-active:scale-110"
           src={image}
         />
       </div>

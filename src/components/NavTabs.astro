@@ -28,7 +28,7 @@ const navItems = [
   {
     navItems.map((link) => (
       <a
-        class=" w-[4.5rem] xs:w-20 sm:w-28  text-center py-2 flex   sm:text-base text-xs  hover:text-black dark:hover:text-white items-center  justify-center  text-nowrap duration-300 transition-all"
+        class=" w-[4.5rem] xs:w-20 sm:w-28  text-center py-2 flex   sm:text-base text-xs  hover:text-black dark:hover:text-white  active:scale-95 duration-100  items-center  justify-center  text-nowrap  transition-all"
         aria-label={link.label}
         href={link.url}
       >
@@ -109,12 +109,17 @@ const navItems = [
     z-index: -1;
     @apply shadow;
     box-sizing: border-box;
-    transition-duration: 0.3s;
+    transition-duration: 0.3s, 0.1s;
+    transition-property: all, scale;
     transition-timing-function: cubic-bezier(0.51, 0, 0.44, 1.28);
     animation: background-shadown 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 200px;
     opacity: 0;
+  }
+
+  .selected:active ~ .backgroundSelected {
+    scale: 0.95;
   }
 
   @keyframes background-shadown {
