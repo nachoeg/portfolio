@@ -1,6 +1,6 @@
 ---
 import GitHub from "../icons/Github.astro";
-import Arrow from "../icons/Arrow.astro";
+import Arrow from "../icons/ArrowUpRight.astro";
 import Link from "../icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 import Tooltip from "./Tooltip.astro";
@@ -11,7 +11,9 @@ import Tags from "./Tags.astro";
 ---
 
 <article
-  class={"group max-h-[550px] flex-auto flex relative flex-col  flex-grow rounded-3xl text-end duration-300  bg-black/5 dark:bg-white/5 hover:bg-black/10 dark:hover:bg-white/10 text-neutral-900 dark:text-white hover:shadow-xl shadow-lg animation-reveal-scroll  overflow-hidden"}
+  class="group max-h-[550px] flex-auto flex relative flex-col flex-grow rounded-3xl text-end hover:shadow-xl shadow-lg duration-300 animation-reveal-scroll
+  text-neutral-900 bg-black/5 hover:bg-black/10
+  dark:text-white dark:bg-white/5 dark:hover:bg-white/10"
   transition:name={`project${id}`}
 >
   <div class="overflow-hidden rounded-3xl h-full">
@@ -47,7 +49,7 @@ import Tags from "./Tags.astro";
     class="absolute top-6 left-6 flex items-end lg:justify-end gap-x-3 opacity-0 group-hover:opacity-100 duration-300"
   >
     <Tooltip down content="Más información">
-      <LinkButton href={projectLink}>
+      <LinkButton brighterXl href={projectLink}>
         <div class="sr-only">Más información</div>
         <Arrow class="size-6" />
       </LinkButton>
@@ -55,7 +57,7 @@ import Tags from "./Tags.astro";
     {
       github && (
         <Tooltip down content="Ver código fuente">
-          <LinkButton rel="noopener" target="_blank" href={github}>
+          <LinkButton brighterXl rel="noopener" target="_blank" href={github}>
             <GitHub class="size-6" />
             <div class="sr-only">Github</div>
           </LinkButton>
@@ -65,7 +67,7 @@ import Tags from "./Tags.astro";
     {
       link && (
         <Tooltip down content="Ir al Sitio web">
-          <LinkButton rel="noopener" target="_blank" href={link}>
+          <LinkButton brighterXl rel="noopener" target="_blank" href={link}>
             <div class="sr-only">Ir al Sitio web</div>
             <Link class="size-6" />
           </LinkButton>

@@ -12,22 +12,20 @@ const edad = calculateAge(new Date(1999, 5, 4));
 ---
 
 <article
-  class="flex flex-col justify-center gap-4 text-neutral-800 dark:text-neutral-300 sm:flex-row"
+  class="flex flex-col sm:flex-row justify-center gap-2 text-neutral-800 dark:text-neutral-300"
 >
   <div
-    class="flex flex-col gap-4 [&_h6]:font-semibold [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold text-pretty order-2 sm:order-2"
+    class="flex flex-col gap-2 [&_h6]:font-semibold [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold text-pretty order-2 sm:order-2 animation-reveal-scroll rounded-3xl"
   >
-    <div class="animation-reveal-scroll">
+    <div class="p-2 animation-reveal-scroll">
       <h6>Mi historia</h6>
       <p>
         Mi nombre es Ignacio, tengo {edad} años y soy de Buenos Aires, Argentina.
-        Antes del desarrollo de software estudié carreras de distintas areas, hasta
-        que finalmente encontré mi lugar en el mundo de la programación.
+        Antes del desarrollo de software estudié distintas carreras de diferentes
+        areas, hasta que finalmente encontré mi lugar en el mundo de la programación.
       </p>
-    </div>
 
-    <div class="animation-reveal-scroll">
-      <p>
+      <p class="mt-2">
         En el año 2025 me gradué de <strong
           >Analista Programador Universitario</strong
         >
@@ -36,18 +34,18 @@ const edad = calculateAge(new Date(1999, 5, 4));
       </p>
     </div>
 
-    <div class="animation-reveal-scroll">
+    <div class="p-2 animation-reveal-scroll">
       <h6>Tecnologias</h6>
       <Tags tags={STACK} />
     </div>
 
-    <div class="animation-reveal-scroll">
+    <div class="p-2 animation-reveal-scroll">
       <h6>Hobbies</h6>
       <p>
         La música me apasiona. Disfruto tanto escuchándola como tocándola, y a
         veces incluso
         <a
-          class="underline text-blue-600"
+          class="hover:underline text-blue-800 dark:text-blue-400"
           rel="noopener"
           target="_blank"
           href="https://soundcloud.com/nacho-escudero-g/">produciendo</a
@@ -61,7 +59,7 @@ const edad = calculateAge(new Date(1999, 5, 4));
     <img
       src="/assets/foto-perfil.jpg"
       alt={personalImageAlt}
-      class="md:self-start order-1 sm:order-1 object-cover object-bottom w-full h-full p-2 rounded-3xl shadow-xl bg-black/10 dark:bg-white/10 animation-reveal-scroll"
+      class="w-full sm:h-1/2 md:h-3/4 lg:h-full md:self-start order-1 sm:order-1 object-cover shadow-xl object-bottom p-2 rounded-3xl bg-black/10 dark:bg-white/5 animation-reveal-scroll"
     />
   </div>
 </article>
