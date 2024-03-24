@@ -10,9 +10,7 @@ import ProfileCard from "./ProfileCard.astro";
       class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] text-neutral-950 dark:text-white animation-reveal flex place-items-center place-content-center sm:place-content-start gap-2"
     >
       Hola
-      <span class="text-3xl xs:text-4xl md:text-5xl lg:text-6xl animation-shake"
-        >👋</span
-      >
+      <span class="text-3xl xs:text-4xl md:text-5xl lg:text-6xl hand">👋</span>
     </h3>
     <h1
       class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] mb-6 md:mb-8 font-bold tracking-tight text-neutral-950 dark:text-white text-balance animation-reveal animation-delay-1"
@@ -32,4 +30,14 @@ import ProfileCard from "./ProfileCard.astro";
   <ProfileCard />
 </div>
 
-<style></style>
+<style>
+  .hand {
+    animation: shake 1.2s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+    animation-delay: 3.8s;
+    animation-iteration-count: 1;
+  }
+
+  h3:hover .hand {
+    animation-iteration-count: infinite;
+  }
+</style>
