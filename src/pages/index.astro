@@ -10,9 +10,11 @@ import Mail from "../icons/Mail.astro";
 import Profile from "../icons/Profile.astro";
 import CodeIcon from "../icons/Code.astro";
 import LinkButton from "../components/LinkButton.astro";
-import Arrow from "../icons/Arrow.astro";
+import Arrow from "../icons/ArrowUpRight.astro";
 import BackgroundGradient from "../components/BackgroundGradient.astro";
 import NavTabs from "../components/NavTabs.astro";
+import Folder from "@/icons/Folder.astro";
+import Folders from "@/icons/Folders.astro";
 ---
 
 <Layout title="Portfolio" description="Desarrollador web fullstack">
@@ -26,17 +28,26 @@ import NavTabs from "../components/NavTabs.astro";
     </SectionContainer>
 
     <SectionContainer id="projects">
-      <div class="flex justify-between animation-reveal-scroll">
-        <SectionTitle>
-          <CodeIcon class="size-7" />
-          Proyectos
-        </SectionTitle>
-        <LinkButton href="/projects">
+      <SectionTitle>
+        <CodeIcon class="size-7 flex-shrink-0" />
+        <span class="overflow-clip text-ellipsis text-nowrap"> Proyectos </span>
+        <LinkButton class="ml-auto" href="/projects">
           <Arrow class="size-6" />
-          <span class="hidden xs:block">Ver todos</span>
+          <span class="hidden xs:block font-normal">Ver todos</span>
         </LinkButton>
-      </div>
+      </SectionTitle>
+
       <Projects />
+
+      <LinkButton
+        expand
+        rounded
+        class="mt-6 py-3 animation-reveal-scroll"
+        href="/projects"
+      >
+        <Folders class="size-6" />
+        <span class="text-lg">Ver más proyectos</span>
+      </LinkButton>
     </SectionContainer>
 
     <SectionContainer id="about">
