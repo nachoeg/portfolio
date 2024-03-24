@@ -1,6 +1,42 @@
 ---
-const { href, expand, pill, rounded, disabled, small, target, rel } =
-  Astro.props;
+const {
+  href,
+  expand,
+  pill,
+  rounded,
+  roundedXl,
+  disabled,
+  small,
+  brighter,
+  brighterXl,
+  target,
+  rel,
+} = Astro.props;
+
+const defaultClass = {
+  size: "h-fit max-w-fit active:scale-95",
+  padding: "px-3 py-2",
+  rounded: "rounded-xl",
+  cursor: "cursor-pointer",
+  color:
+    "text-neutral-800  bg-neutral-50/90 hover:bg-neutral-50/50 active:bg-neutral-50/40 ",
+  colorDark:
+    "dark:text-neutral-100 dark:bg-neutral-900 dark:hover:bg-neutral-800  dark:active:bg-neutral-700",
+};
+
+const expandClass = "w-full h-full active:scale-[.97]";
+const smallClass = "px-2 py-1";
+const pillClass = "rounded-full";
+const roundedXlClass = "rounded-3xl";
+const roundedClass = "rounded-2xl";
+const disabledClass =
+  "pointer-events-none cursor-not-allowed bg-neutral-200 text-neutral-400 dark:bg-neutral-800/50  dark:text-neutral-700";
+const brighterClass =
+  defaultClass.color +
+  "dark:text-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700  dark:active:bg-neutral-600";
+const brighterXlClass =
+  defaultClass.color +
+  "dark:text-neutral-100 dark:bg-neutral-700/60 dark:hover:bg-neutral-600/60  dark:active:bg-neutral-500/60";
 ---
 
 <a
@@ -9,13 +45,13 @@ const { href, expand, pill, rounded, disabled, small, target, rel } =
   rel={rel}
   class=`
   ${Astro.props.class}
-  ${expand ? 'w-full h-full active:scale-[.97]':'h-fit max-w-fit'} 
-  ${small? "px-2 py-1":"px-3 py-2"} 
-  ${pill ? 'rounded-full' : rounded ? 'rounded-2xl' : 'rounded-xl'} 
+  ${expand ? expandClass : defaultClass.size} 
+  ${small? smallClass : defaultClass.padding} 
+  ${pill ? pillClass : roundedXl? roundedXlClass  : rounded ? roundedClass : defaultClass.rounded} 
   ${disabled ? 
-    'pointer-events-none cursor-not-allowed bg-neutral-300 text-neutral-400 dark:bg-neutral-800 dark:text-neutral-700' :   
-  'cursor-pointer text-neutral-800  bg-neutral-50/90 dark:text-neutral-100 dark:bg-neutral-50/10 dark:hover:bg-neutral-50/20 active:bg-neutral-200/90  dark:active:bg-neutral-500 focus-visible:ring-yellow-500/80 hover:bg-neutral-200/90 focus:outline-none focus-visible:outline-none focus-visible:ring focus-visible:ring-white focus-visible:ring-offset-2'} 
-  relative text-nowrap inline-flex  items-center justify-center gap-1 sm:gap-2 text-xs sm:text-base shadow-lg transition duration-100 text-md active:scale-95 `
+    disabledClass : brighterXl ? brighterXlClass : brighter ? brighterClass : defaultClass.color + defaultClass.colorDark}
+  
+  relative text-nowrap inline-flex  items-center justify-center gap-1 sm:gap-2 text-xs sm:text-base shadow-lg transition-all text-md`
 >
   <slot />
 </a>
