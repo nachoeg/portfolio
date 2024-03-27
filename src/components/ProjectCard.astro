@@ -4,14 +4,13 @@ import Arrow from "../icons/ArrowUpRight.astro";
 import Link from "../icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 import Tooltip from "./Tooltip.astro";
-import { Image } from "astro:assets";
 const { id, image, title, description, tags, link, github, projectLink } =
   Astro.props;
 import Tags from "./Tags.astro";
 ---
 
 <article
-  class="group max-h-[550px] flex-auto flex relative flex-col flex-grow rounded-3xl text-end hover:shadow-xl shadow-lg duration-300 animation-reveal-scroll
+  class="group max-h-[550px] relative rounded-3xl text-end hover:shadow-xl shadow-lg duration-300 animation-reveal-scroll
   text-neutral-900 bg-black/5 hover:bg-black/10
   dark:text-white dark:bg-white/5 dark:hover:bg-white/10"
   transition:name={`project${id}`}

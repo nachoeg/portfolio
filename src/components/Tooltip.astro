@@ -5,7 +5,7 @@ const { content, down } = Astro.props;
 <div class="group/tooltip flex relative justify-center">
   <slot />
   <span
-    class=`absolute z-10 opacity-0 scale-0 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 ${ down ? "group-hover/tooltip:translate-y-12":"group-hover/tooltip:-translate-y-9"} pointer-events-none transition-all duration-200 delay-300 text-sm bg-white  dark:bg-black rounded-md px-2 py-1 text-nowrap`
+    class=`absolute z-10 opacity-0 scale-0 group-hover/tooltip:opacity-100 group-hover/tooltip:scale-100 ${ down ? "group-hover/tooltip:translate-y-12":"group-hover/tooltip:-translate-y-5 md:group-hover/tooltip:-translate-y-9"} pointer-events-none transition-all duration-200 delay-300 text-sm bg-white  dark:bg-black rounded-md px-2 py-1 text-nowrap`
   >
     {content}
   </span>
