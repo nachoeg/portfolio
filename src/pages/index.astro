@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import Projects from "../components/Projects.astro";
 import SectionContainer from "../components/SectionContainer.astro";
+import HeroContainer from "../components/HeroContainer.astro";
 import AboutMe from "../components/About.astro";
 import Contact from "../components/Contact.astro";
 import SectionTitle from "../components/SectionTitle.astro";
@@ -21,12 +22,12 @@ import Folders from "@/icons/Folders.astro";
   <Fragment slot="header">
     <NavTabs />
   </Fragment>
-  <BackgroundGradient />
-  <main class="mx-4">
-    <SectionContainer id="hero">
-      <Hero />
-    </SectionContainer>
+  <HeroContainer id="hero">
+    <BackgroundGradient />
 
+    <Hero />
+  </HeroContainer>
+  <main class="mx-4">
     <SectionContainer id="projects">
       <SectionTitle>
         <CodeIcon class="size-7 flex-shrink-0" />
