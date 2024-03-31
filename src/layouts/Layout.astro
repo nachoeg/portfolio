@@ -26,7 +26,7 @@ const { title, description } = Astro.props;
     <ViewTransitions />
   </head>
   <body
-    class="text-neutral-950 dark:text-neutral-50 bg-neutral-200 dark:bg-neutral-950"
+    class="text-neutral-950 dark:text-neutral-50 bg-neutral-50 dark:bg-neutral-950"
   >
     <Header>
       <slot name="header">
@@ -49,6 +49,7 @@ const { title, description } = Astro.props;
 
       html {
         font-family: "Onest Variable", system-ui, sans-serif;
+        scroll-behavior: smooth;
       }
 
       body {
@@ -60,10 +61,6 @@ const { title, description } = Astro.props;
       }
 
       @media (prefers-reduced-motion: no-preference) {
-        html {
-          scroll-behavior: smooth;
-        }
-
         .animation-reveal {
           animation: reveal 1s cubic-bezier(0.72, 0, 0.12, 1) both;
         }
@@ -165,18 +162,12 @@ const { title, description } = Astro.props;
         @keyframes reveal-scroll {
           0% {
             opacity: 0;
-            filter: blur(15px);
             scale: 0.9;
             transform: translateY(60px);
           }
 
-          60% {
-            filter: none;
-          }
-
           100% {
             scale: 1;
-            filter: none;
             transform: translateY(0);
             opacity: 1;
           }
