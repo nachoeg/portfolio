@@ -52,8 +52,8 @@ Los juegos que deben implementarse son los que siguen.
 
 ## Fotos
 
-![Pagina de inicio](https://github.com/nachoeg/portal-juegos/blob/master/screenshots/inicio.webp)
-![Salas](https://github.com/nachoeg/portal-juegos/blob/master/screenshots/salas.webp)
-![Reversi](https://github.com/nachoeg/portal-juegos/blob/master/screenshots/reversi-claro.webp)
-![Tema oscuro](https://github.com/nachoeg/portal-juegos/blob/master/screenshots/reversi-oscuro.webp)
-![Tema clásico](https://github.com/nachoeg/portal-juegos/blob/master/screenshots/reversi-clasico.webp)
+![Pagina de inicio](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/inicio.webp)
+![Salas](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/salas.webp)
+![Reversi](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-claro.webp)
+![Tema oscuro](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-oscuro.webp)
+![Tema clásico](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-clasico.webp)
