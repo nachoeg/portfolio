@@ -1,17 +1,6 @@
 ---
-const {
-  href,
-  expand,
-  pill,
-  rounded,
-  roundedXl,
-  disabled,
-  small,
-  brighter,
-  brighterXl,
-  target,
-  rel,
-} = Astro.props;
+const { href, expand, rounded, disabled, small, brighter, target, rel } =
+  Astro.props;
 
 const defaultClass = {
   size: "h-fit max-w-fit active:scale-95",
@@ -26,16 +15,11 @@ const defaultClass = {
 
 const expandClass = "w-full h-full active:scale-[.97]";
 const smallClass = "px-2 py-1";
-const pillClass = "rounded-full";
-const roundedXlClass = "rounded-3xl";
 const roundedClass = "rounded-2xl";
 const disabledClass =
   "pointer-events-none cursor-not-allowed bg-neutral-100 text-neutral-400 dark:bg-neutral-800/40  dark:text-neutral-700";
 const brighterClass =
   "text-neutral-800 bg-white shadow  hover:bg-neutral-100 dark:text-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-700  dark:active:bg-neutral-600";
-const brighterXlClass =
-  defaultClass.color +
-  "dark:text-neutral-100 dark:bg-neutral-700/60 dark:hover:bg-neutral-600/60  dark:active:bg-neutral-500/60";
 ---
 
 <a
@@ -46,11 +30,11 @@ const brighterXlClass =
   ${Astro.props.class}
   ${expand ? expandClass : defaultClass.size} 
   ${small? smallClass : defaultClass.padding} 
-  ${pill ? pillClass : roundedXl? roundedXlClass  : rounded ? roundedClass : defaultClass.rounded} 
+  ${rounded ? roundedClass : defaultClass.rounded} 
   ${disabled ? 
-    disabledClass : brighterXl ? brighterXlClass : brighter ? brighterClass : defaultClass.color + defaultClass.colorDark}
+    disabledClass : brighter ? brighterClass : defaultClass.color + defaultClass.colorDark}
   
-  relative text-nowrap inline-flex  items-center justify-center gap-1 sm:gap-2 text-xs sm:text-base  transition-all text-md`
+  relative inline-flex items-center justify-center gap-1 sm:gap-2 text-nowrap text-md sm:text-base  transition-all`
 >
   <slot />
 </a>
