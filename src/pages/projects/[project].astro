@@ -37,15 +37,11 @@ if (!info) {
   </Fragment>
   <main class="container mx-auto px-4 py-20 md:py-36 space-y-20">
     <section>
-      <h1
-        transition:name=`titleProject${info.id}`
-        class="text-7xl font-bold mb-6 text-center"
-      >
+      <h1 class="text-7xl font-bold mb-6 text-center">
         {info.title}
       </h1>
       <h2
         class="text-center text-balance text-neutral-700 dark:text-neutral-500 max-w-prose mx-auto"
-        transition:name=`descriptionProject${info.id}`
       >
         {info.description}
       </h2>

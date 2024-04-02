@@ -34,13 +34,12 @@ import Tags from "./Tags.astro";
         />
       </div>
       <div class="order-1 lg:order-2 p-3 lg:ps-6 flex flex-col">
-        <h1 class="text-4xl font-bold" transition:name={`titleProject${id}`}>
+        <h1 class="text-4xl font-bold">
           {title}
         </h1>
         <Tags classList="lg:justify-end mt-3" tags={tags} />
         <div
           class="text-gray-700 dark:text-gray-400 hidden xs:block text-pretty lg:text-balance mt-6 mb-3 lg:mb-0"
-          transition:name={`descriptionProject${id}`}
         >
           {description}
         </div>
