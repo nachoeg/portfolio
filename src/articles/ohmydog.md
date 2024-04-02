@@ -1,7 +1,7 @@
 **Contenidos**
 
 - [Propuesta](#propuesta)
-- [Cómo se llevó a cabo ](#cómo-se-llevó-a-cabo-)
+- [Cómo se llevó a cabo](#como-se-llevo-a-cabo)
 - [Documentos](#documentos)
 - [Problemas que enfrentamos](#problemas-que-enfrentamos)
 - [Fotos](#fotos)
@@ -10,7 +10,7 @@
 
 Proyecto grupal propuesto por la materia de **Ingeniería de Software 2** por la Facultad de Informática de la UNLP, con la finalidad de llevar a la práctica todo el proceso que requiere realizar un proyecto de software para un cliente: desde la elicitación y especificación de requerimientos, el desarrollo de software, y hasta la validación del software.
 
-## Cómo se llevó a cabo <a name="como-se-llevo-a-cabo"></a>
+## Cómo se llevó a cabo<a name="como-se-llevo-a-cabo"></a>
 
 <details>
   <summary> Consigna del proyecto </summary>
