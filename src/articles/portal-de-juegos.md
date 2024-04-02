@@ -1,3 +1,7 @@
+## Propuesta
+
+Proyecto grupal propuesto por la materia de Seminario de Lenguajes: JS por la Facultad de Informática de la UNLP, con el fin de aprender a como armar una aplicación, tanto desde el front-end como desde el back-end.
+
 <details>
   <summary > Consigna del Trabajo Práctico Integrador </summary>
 
@@ -17,9 +21,7 @@ Los juegos que deben implementarse son los que siguen.
 - [Reversi](https://es.wikipedia.org/wiki/Reversi)
 - [Batalla Naval](<https://es.wikipedia.org/wiki/Batalla_naval_(juego)>)
 
-> El repositorio original también cuenta con el Batalla Naval, pero en este repositorio solo estoy subiendo el Reversi. Ya que este es el que más tiempo de desarrollo tiene, por lo tanto, es el que tiene un mejor resultado y más caracteríticas pudimos agregar (sin embargo ambos juegos no difieren mucho en funcionalidades).
-
-</details>
+**Aclaración:** en este repositorio solo esta el Reversi, dado que el Batalla Naval no está 100% terminado y preferí no incluirlo.
 
 ### Consideraciones Generales
 
@@ -40,15 +42,20 @@ Los juegos que deben implementarse son los que siguen.
 2. Ambos juegos requieren dos jugadores. Debe existir un mecanismo que permita a dos personas coordinarse para iniciar una partida entre sí.
 3. Puede permitir continuar una partida luego de cerrar el navegador utilizando por ejemplo Cookies o LocalStorage.
 
-## Funcionalidades extras
+</details>
+
+<details>
+  <summary >  Extras de la consigna </summary>
 
 - Salas
-- Seleccion de temas (claro, oscuro, clásico)
+- Selección de temas (claro, oscuro, clásico)
 - Diseño responsive
 - Ayudas con posibles movimientos
 - Animaciones
 - Sonidos
 - Fullscreen
+
+</details>
 
 ## Fotos
 

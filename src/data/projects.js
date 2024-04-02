@@ -19,7 +19,7 @@ const PROJECTS = [
     title: "OhMyDog",
     date: "2023",
     description:
-      "Aplicacion para la gestión de una veterinaria, que ofrece servicios de consulta, adopciones, perros perdidos, campañas beneficas y turnos.",
+      "Aplicación para la gestión de una veterinaria, que ofrece servicios de consulta, adopciones, perros perdidos, campañas benéficas y turnos.",
     link: "",
     github: "https://github.com/nachoeg/ohmydog-frontend",
     projectLink: "/projects/ohmydog",
@@ -32,7 +32,7 @@ const PROJECTS = [
     id: "portal-de-juegos",
     title: "Portal de Juegos",
     date: "2022",
-    description: "Pagina web para jugar al reversi online.",
+    description: "Página web para jugar al reversi online.",
     link: "https://portal-juegos.onrender.com/",
     github: "https://github.com/nachoeg/portal-juegos",
     projectLink: "/projects/portal-de-juegos",
