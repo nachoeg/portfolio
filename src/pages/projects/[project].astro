@@ -35,9 +35,9 @@ if (!info) {
   <Fragment slot="header">
     <BackButton />
   </Fragment>
-  <main class="container mx-auto px-4 py-20 md:py-36 space-y-20">
+  <main class="mx-auto px-4 py-20 sm:py-36 space-y-10 sm:space-y-20">
     <section>
-      <h1 class="text-7xl font-bold mb-6 text-center">
+      <h1 class="text-5xl sm:text-7xl font-bold mb-6 text-center">
         {info.title}
       </h1>
       <h2
@@ -88,17 +88,17 @@ if (!info) {
       </div>
     </section>
 
-    <section class="flex place-content-center">
+    <section class="flex md:mx-6 place-content-center">
       <img
         transition:name=`imageProject${info.id}`
         src={info.image}
         alt={info.title}
-        class="rounded-3xl p-2 bg-black/10 dark:bg-white/10"
+        class="rounded-xl sm:rounded-3xl p-1 sm:p-2 bg-black/10 dark:bg-white/10"
       />
     </section>
 
     <section
-      class="mx-auto max-w-prose prose lg:prose-xl dark:prose-invert prose-img:rounded-xl prose-a:text-blue-600 [&_summary]:hover:cursor-pointer [&_summary]:font-bold"
+      class="mx-auto max-w-prose prose lg:prose-xl dark:prose-invert prose-img:rounded-xl prose-img:shadow lg:prose-img:shadow-md prose-a:text-blue-600 [&_summary]:hover:cursor-pointer [&_summary]:font-bold"
     >
       <Content />
     </section>
