@@ -1,28 +1,35 @@
 ---
-import GitHub from "../icons/Github.astro";
 import Arrow from "../icons/ArrowUpRight.astro";
-import Link from "../icons/Link.astro";
-import LinkButton from "./LinkButton.astro";
-import Tooltip from "./Tooltip.astro";
-const { id, image, title, description, tags, link, github, projectLink } =
-  Astro.props;
+const {
+  id,
+  image,
+  imagePosition,
+  title,
+  description,
+  tags,
+  link,
+  github,
+  projectLink,
+} = Astro.props;
 import Tags from "./Tags.astro";
 ---
 
 <article
-  class="group max-h-[550px] w-full relative rounded-3xl text-end duration-300 animation-reveal-scroll
+  class="group max-h-[600px] w-full relative rounded-3xl lg:text-end duration-300 animation-reveal-scroll
   text-neutral-900 bg-black/5 hover:bg-neutral-200
   dark:text-white dark:bg-white/5 dark:hover:bg-white/10"
   transition:name={`project${id}`}
 >
   <div class="overflow-hidden rounded-3xl p-3">
     <a href={projectLink} class="flex flex-col lg:flex-row justify-between">
-      <div class="order-2 lg:order-1 flex-shrink-0 lg:w-[500px] lg:h-[300px]">
+      <div
+        class="order-2 lg:order-1 flex-shrink-0 lg:w-[500px] lg:h-[300px] lg:max-w-[500px] lg:max-h-[300px] rounded-2xl"
+      >
         <img
           alt={title}
           transition:name=`imageProject${id}`
           loading={"eager"}
-          class="object-cover h-full w-full object-center rounded-2xl transition duration-200 translate-y-0 saturate-50 group-hover:saturate-100"
+          class=` ${imagePosition} object-cover h-full w-full  rounded-2xl transition duration-200 translate-y-0 saturate-50 group-hover:saturate-100`
           src={image}
         />
       </div>
@@ -30,15 +37,15 @@ import Tags from "./Tags.astro";
         <h1 class="text-4xl font-bold" transition:name={`titleProject${id}`}>
           {title}
         </h1>
-        <Tags classList="justify-end mt-3" tags={tags} />
+        <Tags classList="lg:justify-end mt-3" tags={tags} />
         <div
-          class="text-gray-700 dark:text-gray-400 hidden md:block text-balance mt-6"
+          class="text-gray-700 dark:text-gray-400 hidden xs:block text-pretty lg:text-balance mt-6 mb-3 lg:mb-0"
           transition:name={`descriptionProject${id}`}
         >
           {description}
         </div>
         <div
-          class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-auto mt-auto bg-white dark:bg-neutral-900 p-4 rounded-full"
+          class="hidden lg:block opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-auto mt-auto bg-white dark:bg-neutral-900 p-4 rounded-full"
         >
           <div class="sr-only">Más información</div>
           <Arrow class="size-6" />
