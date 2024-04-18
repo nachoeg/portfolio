@@ -20,10 +20,10 @@ import Tags from "./Tags.astro";
   dark:text-white dark:bg-white/5 dark:hover:bg-white/10"
   transition:name={`project${id}`}
 >
-  <div class="overflow-hidden rounded-3xl p-3">
+  <div class="rounded-3xl p-3">
     <a href={projectLink} class="flex flex-col lg:flex-row justify-between">
       <div
-        class="order-2 lg:order-1 flex-shrink-0 lg:w-[500px] lg:h-[300px] lg:max-w-[500px] lg:max-h-[300px] rounded-2xl overflow-clip"
+        class="order-2 lg:order-1 flex-shrink-0 lg:w-[500px] lg:h-[300px] lg:max-w-[500px] lg:max-h-[300px] rounded-2xl overflow-hidden"
       >
         <img
           alt={title}
@@ -44,7 +44,7 @@ import Tags from "./Tags.astro";
           {description}
         </div>
         <div
-          class="hidden lg:block opacity-0 group-hover:opacity-100 transition-opacity duration-300 ml-auto mt-auto bg-white dark:bg-neutral-900 p-4 rounded-full"
+          class="hidden lg:block opacity-0 group-hover:opacity-100 group-hover:scale-100 scale-0 transition-all duration-300 ml-auto mt-auto bg-white dark:bg-neutral-900 p-4 rounded-full"
         >
           <div class="sr-only">Más información</div>
           <Arrow class="size-6" />
