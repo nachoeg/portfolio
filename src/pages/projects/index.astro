@@ -9,9 +9,9 @@ import SectionTitle from "../../components/SectionTitle.astro";
 <Layout title="Proyectos" description="Lista completa de proyectos">
   <main class="px-4 pt-36">
     <SectionContainer>
-      <SectionTitle>Proyectos</SectionTitle>
+      <SectionTitle>Todos mis proyectos</SectionTitle>
 
-      <div class="flex flex-wrap gap-6 relative">
+      <ol class="relative border-s border-neutral-200 dark:border-neutral-800">
         {
           PROJECTS.map(
             ({
@@ -24,22 +24,30 @@ import SectionTitle from "../../components/SectionTitle.astro";
               link,
               github,
               projectLink,
+              date,
             }) => (
-              <ProjectCard
-                id={id}
-                image={image}
-                imagePosition={imagePosition}
-                title={title}
-                description={description}
-                tags={tags}
-                link={link}
-                github={github}
-                projectLink={projectLink}
-              />
+              <li class="mb-10 ms-4 flex flex-col gap-4">
+                <div class="absolute size-4 bg-neutral-200 rounded-full mt-2 -start-2 border border-neutral-50 dark:border-neutral-950 dark:bg-neutral-800" />
+                <time class="mt-2 leading-none text-neutral-500 dark:text-neutral-600">
+                  {date}
+                </time>
+
+                <ProjectCard
+                  id={id}
+                  image={image}
+                  imagePosition={imagePosition}
+                  title={title}
+                  description={description}
+                  tags={tags}
+                  link={link}
+                  github={github}
+                  projectLink={projectLink}
+                />
+              </li>
             )
           )
         }
-      </div>
+      </ol>
     </SectionContainer>
   </main>
 </Layout>
