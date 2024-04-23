@@ -9,7 +9,8 @@ interface Props {
 }
 import { ViewTransitions } from "astro:transitions";
 import SpeedInsights from "@vercel/speed-insights/astro";
-import ScrollUp from "@/components/ScrollUp.astro";
+import ScrollUp from "@/components/ScrollUpButton.astro";
+import TitleButton from "@/components/TitleButton.astro";
 
 const { title, description } = Astro.props;
 ---
@@ -31,9 +32,12 @@ const { title, description } = Astro.props;
     <Header>
       <slot name="header">
         <BackButton />
+        <TitleButton title={title} />
       </slot>
     </Header>
+
     <slot />
+
     <SpeedInsights />
 
     <Footer />
@@ -74,6 +78,18 @@ const { title, description } = Astro.props;
           animation-timeline: view();
           animation-duration: 1ms;
           animation-range: entry 0 cover 350px;
+        }
+
+        .animation-background-title-scroll {
+          animation: background-title 1s linear both;
+          animation-timeline: scroll();
+          animation-range: 0 200px;
+        }
+
+        .dark .animation-background-title-scroll {
+          animation: background-title-dark 1s linear both;
+          animation-timeline: scroll();
+          animation-range: 0 200px;
         }
 
         .animation-shake {
@@ -298,9 +314,19 @@ const { title, description } = Astro.props;
           }
         }
 
-        @keyframes background-shadown {
-          to {
-            opacity: 1;
+        @keyframes background-title {
+          from {
+            background: transparent;
+            @apply text-neutral-700;
+            @apply shadow-none;
+          }
+        }
+
+        @keyframes background-title-dark {
+          from {
+            background: transparent;
+            @apply text-neutral-400;
+            @apply shadow-none;
           }
         }
       }

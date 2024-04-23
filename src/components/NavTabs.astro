@@ -24,11 +24,13 @@ const navItems = [
 ];
 ---
 
-<nav class="relative flex font-medium rounded-full justify-center items-center">
+<nav
+  class="relative flex font-medium rounded-full justify-center items-center mr-0 xs:mr-1 sm:mr-0"
+>
   {
     navItems.map((link) => (
       <a
-        class=" w-[4.5rem] xs:w-20 sm:w-28  text-center py-2 flex   sm:text-base text-xs  hover:text-black dark:hover:text-white  active:scale-95 duration-100  items-center  justify-center  text-nowrap  transition-all"
+        class=" w-[5rem] xs:w-24 sm:w-28  text-center py-2 flex text-sm xs:text-base  hover:text-black dark:hover:text-white  active:scale-95 duration-100  items-center  justify-center  text-nowrap  transition-all"
         aria-label={link.label}
         href={link.url}
       >
@@ -37,7 +39,10 @@ const navItems = [
       </a>
     ))
   }
-  <div class="backgroundSelected bg-white dark:bg-white/10"></div>
+  <div
+    class="backgroundSelected rounded-xl sm:rounded-full shadow bg-white dark:bg-white/10"
+  >
+  </div>
 </nav>
 
 <script>
@@ -103,16 +108,14 @@ const navItems = [
     height: 100%;
     width: 33%;
     position: absolute;
-    border-radius: 100px;
     pointer-events: none;
     left: 0;
     z-index: -1;
-    @apply shadow;
     box-sizing: border-box;
     transition-duration: 0.3s, 0.1s;
     transition-property: all, scale;
     transition-timing-function: cubic-bezier(0.51, 0, 0.44, 1.28);
-    animation: background-shadown 1s linear both;
+    animation: reveal-background 1s linear both;
     animation-timeline: scroll();
     animation-range: 0 200px;
     opacity: 0;
