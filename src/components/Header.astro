@@ -4,21 +4,9 @@ import LanguageToggle from "./LanguageToggle.astro";
 ---
 
 <header
-  class="fixed min-w-full sm:min-w-min min-h-12 sm:min-h-14 top-0 z-50 flex items-center self-center justify-center mx-auto sm:mt-5 backdrop-blur shadow-md text-neutral-700 dark:text-neutral-400 p-2 sm:rounded-full gap-0 sm:gap-1 bg-neutral-100/60 dark:bg-neutral-900/70"
+  class="fixed min-w-full sm:min-w-min min-h-12 sm:min-h-14 top-0 z-50 flex items-center self-center justify-center mx-auto sm:mt-5 backdrop-blur shadow-md text-neutral-700 dark:text-neutral-400 p-2 sm:rounded-full gap-0 sm:gap-1 bg-neutral-100/60 dark:bg-neutral-900/70 animation-header"
 >
   <slot />
   <ThemeToggle />
   <LanguageToggle />
 </header>
-
-<style>
-  header {
-    animation:
-      nav-background linear both,
-      reveal-down 1s cubic-bezier(0.72, 0, 0.12, 1) both;
-    animation-timeline: scroll(), auto;
-    animation-range:
-      0 100px,
-      normal;
-  }
-</style>
