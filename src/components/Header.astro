@@ -15,19 +15,21 @@ import NavBar from "./NavBar.astro";
 </header>
 
 <script is:inline>
-  var prevScrollpos = window.scrollY;
-  var header = document.querySelector("header");
-  window.onscroll = function () {
-    if (window.innerWidth < 640) {
-      var currentScrollPos = window.scrollY;
-      if (prevScrollpos > currentScrollPos) {
-        header.style.top = "0";
+  document.addEventListener("astro:page-load", () => {
+    var prevScrollpos = window.scrollY;
+    var header = document.querySelector("header");
+    window.onscroll = function () {
+      if (window.innerWidth < 640) {
+        var currentScrollPos = window.scrollY;
+        if (prevScrollpos > currentScrollPos) {
+          header.style.top = "0";
+        } else {
+          header.style.top = "-60px";
+        }
+        prevScrollpos = currentScrollPos;
       } else {
-        header.style.top = "-60px";
+        header.style.top = "0";
       }
-      prevScrollpos = currentScrollPos;
-    } else {
-      header.style.top = "0";
-    }
-  };
+    };
+  });
 </script>
