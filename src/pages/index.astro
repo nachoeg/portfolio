@@ -13,15 +13,30 @@ import CodeIcon from "../icons/Code.astro";
 import LinkButton from "../components/LinkButton.astro";
 import Arrow from "../icons/ArrowUpRight.astro";
 import BackgroundGradient from "../components/BackgroundGradient.astro";
-import NavTabs from "../components/NavTabs.astro";
-import Folder from "@/icons/Folder.astro";
+import SectionTabs from "../components/SectionTabs.astro";
 import Folders from "@/icons/Folders.astro";
+import TitleButton from "@/components/TitleButton.astro";
+import BottomNavbar from "@/components/BottomNavbar.astro";
+import Footer from "@/components/Footer.astro";
+import ScrollUpButton from "@/components/ScrollUpButton.astro";
 ---
 
 <Layout title="Portfolio" description="Desarrollador web fullstack">
   <Fragment slot="header">
-    <NavTabs />
+    <SectionTabs classList="hidden sm:flex" />
+    <TitleButton classList="flex sm:hidden" title={"Inicio"} />
   </Fragment>
+
+  <Fragment slot="footer">
+    <Footer padding="py-28" />
+  </Fragment>
+
+  <Fragment slot="scroll-up">
+    <ScrollUpButton position="bottom-24 inset-x-auto" />
+  </Fragment>
+
+  <BottomNavbar />
+
   <HeroContainer id="hero">
     <BackgroundGradient />
 

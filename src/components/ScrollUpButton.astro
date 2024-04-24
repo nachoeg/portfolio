@@ -1,22 +1,23 @@
 ---
 import ArrowUp from "@/icons/ArrowUp.astro";
+const { position } = Astro.props;
 ---
 
 <button
   onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
-  class="fixed p-1 rounded-full max-w-min bottom-5 right-5 self-center sm:bottom-10 sm:right-10 transition-all
+  class=`fixed p-1 rounded-full max-w-min ${position ?? "bottom-5 inset-x-auto"}  self-center sm:bottom-10 sm:right-10 transition-all
   hover:scale-110 active:scale-95 shadow-md hover:shadow-lg backdrop-blur
   bg-neutral-100/60 dark:bg-neutral-900/70
   text-neutral-700 dark:text-neutral-400
   hover:text-black dark:hover:text-white
-  hover:bg-white dark:hover:bg-neutral-800"
+  hover:bg-white dark:hover:bg-neutral-800`
 >
   <ArrowUp class="size-10" />
 </button>
 
 <style>
   button {
-    animation: fade-in 1s linear both;
+    animation: reveal 1s linear both;
     animation-timeline: scroll();
     animation-range: 500px 800px;
     opacity: 0;
