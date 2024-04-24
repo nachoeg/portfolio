@@ -96,6 +96,12 @@ const { title, description } = Astro.props;
           animation-range: entry 0 cover 350px;
         }
 
+        .animation-reveal-button-scroll {
+          animation: reveal 1s linear both;
+          animation-timeline: scroll();
+          animation-range: 500px 800px;
+        }
+
         .animation-background-title-scroll {
           animation: background-title 1s linear both;
           animation-timeline: scroll();
