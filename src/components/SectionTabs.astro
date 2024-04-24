@@ -1,24 +1,30 @@
 ---
+import ProfileFilled from "@/icons/ProfileFilled.astro";
 import Code from "../icons/Code.astro";
+import CodeFilled from "../icons/CodeFilled.astro";
 import Mail from "../icons/Mail.astro";
+import MailFilled from "../icons/MailFilled.astro";
 import Profile from "../icons/Profile.astro";
 const navItems = [
   {
     title: "Proyectos",
     label: "projects",
     icon: Code,
+    iconFilled: CodeFilled,
     url: "/#projects",
   },
   {
     title: "Sobre mí",
     label: "about",
     icon: Profile,
+    iconFilled: ProfileFilled,
     url: "/#about",
   },
   {
     title: "Contacto",
     label: "contact",
     icon: Mail,
+    iconFilled: MailFilled,
     url: "/#contact",
   },
 ];
@@ -35,7 +41,8 @@ const { classList } = Astro.props;
         aria-label={link.label}
         href={link.url}
       >
-        <link.icon class="sm:hidden size-5" />
+        <link.icon class="sm:hidden size-5 icon" />
+        <link.iconFilled class="hidden size-5 icon-filled" />
         <span class="text-xs sm:text-base">{link.title}</span>
       </a>
     ))
@@ -91,6 +98,20 @@ const { classList } = Astro.props;
 <style>
   .selected {
     @apply text-black dark:text-white;
+  }
+
+  .selected .icon {
+    display: none;
+  }
+
+  .selected .icon-filled {
+    display: block;
+  }
+
+  @media (min-width: 640px) {
+    .selected .icon-filled {
+      display: none;
+    }
   }
 
   [aria-label="projects"]:is(.selected) ~ .backgroundSelected {

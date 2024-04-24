@@ -2,11 +2,10 @@
 import LinkedIn from "../icons/LinkedIn.astro";
 import Curriculum from "../icons/Curriculum.astro";
 import Github from "../icons/Github.astro";
-import Mail from "../icons/Mail.astro";
+import Mail from "../icons/MailSend.astro";
 import LinkButton from "../components/LinkButton.astro";
 ---
 
-<!-- grid grid-cols-1 grid-rows-4 grid-flow-row sm:grid-cols-4 sm:grid-rows-4 -->
 <div
   class="parent w-full h-96 gap-2 p-2 rounded-3xl bg-black/5 dark:bg-white/5 text-black dark:text-white animation-reveal-scroll"
 >
@@ -19,13 +18,13 @@ import LinkButton from "../components/LinkButton.astro";
       rel="noopener"
       href="mailto:ignacioescuderogonzalez@gmail.com"
     >
-      <Mail class="size-9" />
+      <Mail class="size-7 sm:size-9" />
       <span class="text-2xl">Email</span>
     </LinkButton>
   </div>
   <div class="child animation-reveal-scroll">
     <LinkButton disabled expand rounded href="/">
-      <Curriculum class="size-9" />
+      <Curriculum class="size-7 sm:size-9" />
       <span class="text-2xl">Curriculum</span>
     </LinkButton>
   </div>
@@ -38,7 +37,7 @@ import LinkButton from "../components/LinkButton.astro";
       rel="noopener"
       href="https://www.linkedin.com/in/ignacio-escudero-gonzalez/"
     >
-      <LinkedIn class="size-9" />
+      <LinkedIn class="size-7 sm:size-9" />
       <span class="text-2xl">LinkedIn</span>
     </LinkButton>
   </div>
@@ -51,7 +50,7 @@ import LinkButton from "../components/LinkButton.astro";
       rel="noopener"
       href="https://github.com/nachoeg"
     >
-      <Github class="size-8" />
+      <Github class="size-7 sm:size-8" />
       <span class="text-2xl">GitHub</span>
     </LinkButton>
   </div>
