@@ -26,11 +26,17 @@ import SectionTitle from "../../components/SectionTitle.astro";
               projectLink,
               date,
             }) => (
-              <li class="mb-10 ms-4 flex flex-col gap-4">
-                <div class="absolute size-4 bg-neutral-200 rounded-full mt-2 -start-2 border border-neutral-50 dark:border-neutral-950 dark:bg-neutral-800" />
-                <time class="mt-2 leading-none text-neutral-500 dark:text-neutral-600">
+              <li class="relative ms-4 mb-10 flex flex-col gap-4 ">
+                <div class="xl:hidden absolute size-4 bg-neutral-200 rounded-full mt-2 -start-6 border border-neutral-50 dark:border-neutral-950 dark:bg-neutral-800" />
+                <time class="xl:hidden mt-2 leading-none text-neutral-500 dark:text-neutral-600">
                   {date}
                 </time>
+                <div class="hidden xl:flex absolute h-full -start-2 -translate-x-full items-center gap-1">
+                  <time class="leading-none text-neutral-500 dark:text-neutral-600 ">
+                    {date}
+                  </time>
+                  <div class=" size-4 bg-neutral-200 rounded-full border border-neutral-50 dark:border-neutral-950 dark:bg-neutral-800" />
+                </div>
 
                 <ProjectCard
                   id={id}
