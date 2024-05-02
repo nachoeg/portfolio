@@ -88,7 +88,7 @@ const TAGS = {
   },
   TAILWIND: {
     name: "Tailwind CSS",
-    class: "bg-[#1a5975] text-white",
+    class: "bg-[#146275] text-white",
     icon: Tailwind,
   },
   TYPESCRIPT: {
