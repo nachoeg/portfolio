@@ -59,6 +59,7 @@ Los juegos que deben implementarse son los que siguen.
 
 ## Fotos
 
+![Demo](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/demo.gif)
 ![Pagina de inicio](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/inicio.webp)
 ![Salas](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/salas.webp)
 ![Reversi](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-claro.webp)
