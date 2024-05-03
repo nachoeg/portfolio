@@ -12,7 +12,7 @@ const edad = calculateAge(new Date(1999, 5, 4));
 ---
 
 <article
-  class="flex flex-col sm:flex-row justify-center gap-x-2 gap-y-6 text-neutral-800 dark:text-neutral-300 relative"
+  class="flex flex-col sm:flex-row justify-center gap-x-2 lg:gap-x-6 gap-y-6 text-neutral-800 dark:text-neutral-300 relative"
 >
   <div
     class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animation-reveal-scroll"
@@ -27,16 +27,15 @@ const edad = calculateAge(new Date(1999, 5, 4));
   </div>
 
   <aside
-    class="flex flex-col gap-2 px-2 [&_h5]:font-semibold [&_h5]:pb-1 [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold text-pretty rounded-3xl"
+    class="flex flex-col gap-8 px-2 [&_h5]:font-semibold [&_h5]:pb-1 [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold rounded-3xl"
   >
     <div>
       <h5 class="text-lg animation-reveal-scroll">Mi historia</h5>
-      <p class="animation-reveal-scroll">
+      <p class="animation-reveal-scroll lg:pr-2">
         Mi nombre es Ignacio, tengo {edad} años y soy de Buenos Aires, Argentina.
         Antes del desarrollo de software estudié distintas carreras de diferentes
         areas, hasta que finalmente encontré mi lugar en el mundo de la programación.
       </p>
-
       <p class="mt-2 animation-reveal-scroll">
         En el año 2025 me gradué de <strong
           >Analista Programador Universitario</strong
@@ -54,8 +53,8 @@ const edad = calculateAge(new Date(1999, 5, 4));
         </h6>
         <Tags tags={STACK.primary} />
       </div>
-      <div class="animation-reveal-scroll mt-3 mb-2">
-        <h6 class="text-sm text-neutral-700 dark:text-neutral-400 mt-2">
+      <div class="animation-reveal-scroll mt-4">
+        <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
           Conocimientos básicos
         </h6>
         <Tags tags={STACK.secondary} />
