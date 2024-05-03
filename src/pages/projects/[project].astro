@@ -95,10 +95,14 @@ if (!info) {
     </section>
 
     <section
-      class="mx-auto max-w-prose prose lg:prose-xl dark:prose-invert prose-a:text-blue-500 dark:prose-a:text-blue-400
+      class="mx-auto max-w-prose prose prose-figcaption:mt-0 prose-figcaption:mr-2 prose-figcaption:text-right lg:prose-xl dark:prose-invert prose-a:text-blue-500 dark:prose-a:text-blue-400
       marker:text-neutral-400 dark:marker:text-neutral-600
       [&_summary]:hover:cursor-pointer [&_summary]:font-bold
-      prose-img:rounded-xl prose-img:transition-all prose-img:p-1 prose-img:bg-black/5 dark:prose-img:bg-white/5 hover:prose-img:scale-105 prose-img:shadow lg:prose-img:shadow-md"
+      prose-img:rounded-xl prose-img:transition-all prose-img:p-1 prose-img:bg-black/5 dark:prose-img:bg-white/5
+      hover:[&_img]:scale-105
+      hover:[&_figure]:scale-105
+      hover:[&_figure_>_img]:scale-100
+      prose-figure:transition-all prose-img:shadow lg:prose-img:shadow-md"
     >
       <Content />
     </section>
