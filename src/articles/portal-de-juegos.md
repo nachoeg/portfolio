@@ -59,12 +59,52 @@ Los juegos que deben implementarse son los que siguen.
 
 ## Demo
 
-![Demo](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/demo.gif)
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/demo.gif">
+
+<figcaption> Demo multijugador </figcaption>
+
+</figure>
 
 ## Fotos
 
-![Pagina de inicio](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/inicio.webp)
-![Salas](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/salas.webp)
-![Reversi](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-claro.webp)
-![Tema oscuro](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-oscuro.webp)
-![Tema clásico](https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-clasico.webp)
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/inicio.webp">
+
+<figcaption> Pagina de inicio </figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/salas.webp">
+
+<figcaption> Salas </figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-claro.webp">
+
+<figcaption> Reversi </figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-oscuro.webp">
+
+<figcaption> Tema oscuro </figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/portal-juegos/master/screenshots/reversi-clasico.webp">
+
+<figcaption> Tema clásico </figcaption>
+
+</figure>
