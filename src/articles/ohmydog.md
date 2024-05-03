@@ -57,14 +57,90 @@ Para poder desarrollar la aplicación, primero tuvimos que recolectar informaci�
 
 ## Fotos
 
-![Pagina de inicio](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/inicio.webp)
-![Perdidos](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/perdidos.webp)
-![Registrar Perro Perdido](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/registrar-perro-perdido.webp)
-![Solicitar Adopción](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/solicitar-adopcion.webp)
-![Turnos](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/ver-turnos.webp)
-![Solicitar Turnos](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/solicitar-turno.webp)
-![Registrar usuario](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/registrar%20usuario.webp)
-![Perfil](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/perfil.webp)
-![Usuarios](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/usuarios.webp)
-![Perros de un usuario](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/perros.webp)
-![Historial clínico de un perro](https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/historial-clinico.webp)
+<figure>
+
+  <img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/inicio.webp">
+  
+  <figcaption>Inicio</figcaption>
+
+</figure>
+
+<figure>
+
+  <img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/perdidos.webp">
+  
+  <figcaption>Perros perdidos</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/registrar-perro-perdido.webp">
+
+  <figcaption>Registrar perro perdido</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/solicitar-adopcion.webp">
+
+  <figcaption>Solicitar adopción</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/ver-turnos.webp">
+
+  <figcaption>Solicitudes de turnos</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/solicitar-turno.webp">
+
+  <figcaption>Solicitar turno</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/registrar%20usuario.webp">
+
+  <figcaption>Registrar usuario</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/perfil.webp">
+
+  <figcaption>Perfil</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/usuarios.webp">
+
+  <figcaption>Usuarios</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/perros.webp">
+
+  <figcaption>Perros de un usuario</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/ohmydog-frontend/main/screenshots/historial-clinico.webp">
+
+  <figcaption>Historial clínico de un perro</figcaption>
+
+</figure>
