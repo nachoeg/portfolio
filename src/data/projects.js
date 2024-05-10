@@ -11,7 +11,7 @@ const PROJECTS = [
     projectLink: "/projects/better-default-theme",
     github: "https://github.com/nachoeg/better-default-theme",
     image: "/assets/better-default-theme.webp",
-    imagePosition: "object-left",
+    imagePosition: "object-center",
     tags: [TAGS.JSON, TAGS.VSCODE],
     selected: false,
   },
