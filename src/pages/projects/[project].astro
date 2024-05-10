@@ -51,27 +51,19 @@ if (!info) {
       </div>
       <div class="col-span-1">
         <p class="text-neutral-700 dark:text-neutral-400">Links</p>
-        <div class="flex flex-col">
+        <div
+          class="flex flex-col font-medium text-blue-600 dark:text-blue-500 hover:[&_a]:underline"
+        >
           {
             info.github && (
-              <Link
-                rel="noopener"
-                target="_blank"
-                href={info.github}
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
+              <Link rel="noopener" target="_blank" href={info.github}>
                 Github
               </Link>
             )
           }
           {
             info.link && (
-              <Link
-                rel="noopener"
-                target="_blank"
-                href={info.link}
-                class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >
+              <Link rel="noopener" target="_blank" href={info.link}>
                 Sitio web
               </Link>
             )
@@ -95,15 +87,16 @@ if (!info) {
     </section>
 
     <section
-      class="mx-auto max-w-prose prose prose-figcaption:mt-0 prose-figcaption:mr-2 prose-figcaption:text-right lg:prose-xl dark:prose-invert prose-a:text-blue-500 dark:prose-a:text-blue-400
+      class="mx-auto max-w-prose prose lg:prose-xl dark:prose-invert prose-a:text-blue-500 dark:prose-a:text-blue-500
       marker:text-neutral-400 dark:marker:text-neutral-600
       [&_summary]:hover:cursor-pointer [&_summary]:font-bold
       prose-img:rounded-xl prose-img:transition-all prose-img:p-1 prose-img:bg-black/5 dark:prose-img:bg-white/5
-      hover:[&_img]:scale-105
+      prose-img:z-0 prose-img:shadow lg:prose-img:shadow-md
       hover:[&_figure]:scale-105
-      hover:[&_figure_>_img]:scale-100
-      prose-figure:max-w-fit
-      prose-figure:transition-all prose-img:shadow lg:prose-img:shadow-md"
+      prose-figure:max-w-fit prose-figure:transition-all prose-figure:mx-auto prose-figure:relative
+      prose-figcaption:max-w-fit prose-figcaption:ms-auto prose-figcaption:me-auto prose-figcaption:px-2 prose-figcaption:rounded-b-md prose-figcaption:shadow-md prose-figcaption:z-50 prose-figcaption:-mt-1
+      prose-figcaption:text-neutral-600 dark:prose-figcaption:text-neutral-400
+      prose-figcaption:bg-[#ededed] dark:prose-figcaption:bg-[#161616]"
     >
       <Content />
     </section>
