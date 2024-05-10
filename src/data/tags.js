@@ -5,6 +5,7 @@ import Css from "../icons/Css.astro";
 import Html from "../icons/Html.astro";
 import JavaScript from "../icons/JavaScript.astro";
 import Java from "../icons/Java.astro";
+import Json from "../icons/Json.astro";
 import Spring from "../icons/Spring.astro";
 import Tailwind from "../icons/Tailwind.astro";
 import React from "../icons/React.astro";
@@ -14,6 +15,7 @@ import Typescript from "../icons/Typescript.astro";
 import MySql from "../icons/MySql.astro";
 import Docker from "../icons/Docker.astro";
 import NextJS from "../icons/NextJS.astro";
+import VSCode from "../icons/VSCode.astro";
 
 const TAGS = {
   ASTRO: {
@@ -56,6 +58,11 @@ const TAGS = {
     class: "bg-[#756619] text-white",
     icon: JavaScript,
   },
+  JSON: {
+    name: "JSON",
+    class: "bg-[#4e1475] text-white",
+    icon: Json,
+  },
   MUI: {
     name: "Material UI",
     class: "bg-[#033c75] text-white",
@@ -95,6 +102,11 @@ const TAGS = {
     name: "TypeScript",
     class: "bg-[#1d4775] text-white",
     icon: Typescript,
+  },
+  VSCODE: {
+    name: "Visual Studio Code",
+    class: "bg-[#004675] text-white",
+    icon: VSCode,
   },
 };
 
