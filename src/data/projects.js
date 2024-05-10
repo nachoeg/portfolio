@@ -13,7 +13,7 @@ const PROJECTS = [
     image: "/assets/better-default-theme.webp",
     imagePosition: "object-center",
     tags: [TAGS.JSON, TAGS.VSCODE],
-    selected: false,
+    selected: true,
   },
   {
     id: "portfolio",
@@ -26,7 +26,7 @@ const PROJECTS = [
     image: "/assets/portfolio.webp",
     imagePosition: "object-center",
     tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND],
-    selected: true,
+    selected: false,
   },
   {
     id: "ohmydog",
