@@ -4,7 +4,7 @@ La extension incluye tres variantes del tema por defecto de Visual Studio Code, 
 
 <img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview1.webp">
 
-  <figcaption>Enhanced</figcaption>
+  <figcaption>Enhanced Default</figcaption>
 
 </figure>
 
@@ -12,7 +12,7 @@ La extension incluye tres variantes del tema por defecto de Visual Studio Code, 
 
 <img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview2.webp">
 
-  <figcaption>Alt colors</figcaption>
+  <figcaption>Enhanced Default (alt colors)</figcaption>
 
 </figure>
 
@@ -20,6 +20,6 @@ La extension incluye tres variantes del tema por defecto de Visual Studio Code, 
 
 <img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview3.webp">
 
-  <figcaption>Default colors</figcaption>
+  <figcaption>Enhanced Default (default colors)</figcaption>
 
 </figure>
