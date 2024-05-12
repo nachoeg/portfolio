@@ -2,15 +2,15 @@ import TAGS from "./tags";
 
 const PROJECTS = [
   {
-    id: "better-default-theme",
-    title: "Better Default",
+    id: "enhanced-default-theme",
+    title: "Enhanced Default",
     date: "Mayo 2024",
     description:
       "Tema de Visual Studio Code. Es como el predeterminado, pero un poco mejor.",
-    link: "https://marketplace.visualstudio.com/items?itemName=nachoeg.better-default-theme",
-    projectLink: "/projects/better-default-theme",
-    github: "https://github.com/nachoeg/better-default-theme",
-    image: "/assets/better-default-theme.webp",
+    link: "https://marketplace.visualstudio.com/items?itemName=nachoeg.enhanced-default-theme",
+    projectLink: "/projects/enhanced-default-theme",
+    github: "https://github.com/nachoeg/enhanced-default-theme",
+    image: "/assets/enhanced-default-theme.webp",
     imagePosition: "object-center",
     tags: [TAGS.JSON, TAGS.VSCODE],
     selected: true,
