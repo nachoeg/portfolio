@@ -7,7 +7,7 @@ const PROJECTS = [
     date: "Mayo 2024",
     description:
       "Tema de Visual Studio Code. Es como el predeterminado, pero un poco mejor.",
-    link: "https://marketplace.visualstudio.com/items?itemName=nachoeg.enhanced-default-theme",
+    link: "https://marketplace.visualstudio.com/items?itemName=nachoeg.better-default-theme",
     projectLink: "/projects/enhanced-default-theme",
     github: "https://github.com/nachoeg/enhanced-default-theme",
     image: "/assets/enhanced-default-theme.webp",
