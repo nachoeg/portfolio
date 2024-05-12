@@ -2,24 +2,24 @@ La extension incluye tres variantes del tema por defecto de Visual Studio Code, 
 
 <figure>
 
-<img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview1.png">
+<img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview1.webp">
 
-  <figcaption>Enhanced Default</figcaption>
-
-</figure>
-
-<figure>
-
-<img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview2.png">
-
-  <figcaption>Alt Syntax Highlighting</figcaption>
+  <figcaption>Enhanced</figcaption>
 
 </figure>
 
 <figure>
 
-<img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview3.png">
+<img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview2.webp">
 
-  <figcaption>Default Syntax Highlighting</figcaption>
+  <figcaption>Alt colors</figcaption>
+
+</figure>
+
+<figure>
+
+<img src="https://raw.githubusercontent.com/nachoeg/enhanced-default-theme/master/preview3.webp">
+
+  <figcaption>Default colors</figcaption>
 
 </figure>
