@@ -13,8 +13,8 @@ import ArrowLeft from "../icons/ArrowLeft.astro";
 </Tooltip>
 
 <script is:inline>
-  const goBack = () => {
+  function goBack() {
     if (window.history.length > 2) window.history.back();
     else window.location.href = "/";
-  };
+  }
 </script>
