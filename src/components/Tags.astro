@@ -10,13 +10,11 @@ interface Tag {
 <ul class=`flex flex-row mt-2 gap-2 flex-wrap ${classList}`>
   {
     tags.map((tag: Tag) => (
-      <li>
-        <span
-          class={`flex text-nowrap gap-x-2 rounded-full text-xs shadow-sm ${tag.class} py-1 px-2 `}
-        >
-          <tag.icon class="size-4" />
-          {tag.name}
-        </span>
+      <li
+        class={`flex overflow-clip text-nowrap gap-x-2 rounded-full text-xs shadow-sm ${tag.class} py-1 px-2`}
+      >
+        <tag.icon class="size-4 shrink-0" />
+        <span class="truncate">{tag.name}</span>
       </li>
     ))
   }
