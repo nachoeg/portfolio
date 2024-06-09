@@ -3,8 +3,10 @@ import type { GetStaticPaths } from "astro";
 import Layout from "../../layouts/Layout.astro";
 import PROJECTS from "../../data/projects.js";
 import Tags from "../../components/Tags.astro";
-import Link from "../../components/Link.astro";
-import BackButton from "../../components/BackButton.astro";
+import LinkButton from "../../components/LinkButton.astro";
+import World from "../../icons/World.astro";
+import Github from "@/icons/Github.astro";
+import VSCodeOutlined from "@/icons/VSCodeOutlined.astro";
 
 export const getStaticPaths = (() => {
   const paths = PROJECTS.map((project) => ({
@@ -44,36 +46,61 @@ if (!info) {
       </h2>
     </section>
 
-    <section class="grid grid-cols-3 max-w-[500px] mx-auto">
-      <div class="col-span-1">
-        <p class="text-neutral-700 dark:text-neutral-400">Fecha</p>
+    <section
+      class="space-y-10 sm:space-y-0 text-center sm:grid grid-cols-3 max-w-[500px] mx-auto [&_div]:col-span-1 [&_div_>_p]:mb-1 [&_div_>_p]:text-neutral-700 [&_div_>_p]:dark:text-neutral-400 center"
+    >
+      <div>
+        <p>Fecha</p>
         {info.date}
       </div>
-      <div class="col-span-1">
-        <p class="text-neutral-700 dark:text-neutral-400">Links</p>
-        <div
-          class="flex flex-col font-medium text-blue-600 dark:text-blue-500 hover:[&_a]:underline"
-        >
-          {
-            info.github && (
-              <Link rel="noopener" target="_blank" href={info.github}>
-                Github
-              </Link>
-            )
-          }
-          {
-            info.link && (
-              <Link rel="noopener" target="_blank" href={info.link}>
-                Sitio web
-              </Link>
-            )
-          }
-          {!info.github && !info.link && "No hay links disponibles"}
-        </div>
+      <div>
+        <p>Tecnologias</p>
+        <Tags classList="justify-center" tags={info.tags} />
       </div>
-      <div class="col-span-1">
-        <p class="text-neutral-700 dark:text-neutral-400">Tecnologias</p>
-        <Tags tags={info.tags} />
+      <div>
+        <p>Links</p>
+        <div class="flex flex-col gap-1 items-center">
+          {
+            info.links && info.links.website && (
+              <LinkButton
+                target="_blank"
+                rel="noopener"
+                href={info.links.website}
+                small
+              >
+                Sitio web
+                <World class="size-5" />
+              </LinkButton>
+            )
+          }
+          {
+            info.links && info.links.github && (
+              <LinkButton
+                target="_blank"
+                rel="noopener"
+                href={info.links.github}
+                small
+              >
+                Repositorio
+                <Github class="size-5 " />
+              </LinkButton>
+            )
+          }
+          {
+            info.links && info.links.marketplace && (
+              <LinkButton
+                target="_blank"
+                rel="noopener"
+                href={info.links.marketplace}
+                small
+              >
+                Marketplace
+                <VSCodeOutlined class="size-5" />
+              </LinkButton>
+            )
+          }
+          {!info.links && "No hay links disponibles"}
+        </div>
       </div>
     </section>
 
@@ -94,7 +121,8 @@ if (!info) {
       prose-img:z-0 prose-img:shadow lg:prose-img:shadow-md
       hover:[&_figure]:scale-105
       prose-figure:max-w-fit prose-figure:transition-all prose-figure:mx-auto prose-figure:relative
-      prose-figcaption:max-w-fit prose-figcaption:ms-auto prose-figcaption:me-auto prose-figcaption:px-2 prose-figcaption:rounded-b-md prose-figcaption:shadow-md prose-figcaption:z-50 prose-figcaption:-mt-1
+      prose-figcaption:relative
+      prose-figcaption:max-w-fit prose-figcaption:min-w-fit prose-figcaption:mx-auto prose-figcaption:text-center prose-figcaption:text-nowrap prose-figcaption:px-2 prose-figcaption:rounded-b-md prose-figcaption:shadow-md prose-figcaption:z-10 prose-figcaption:-mt-1
       prose-figcaption:text-neutral-600 dark:prose-figcaption:text-neutral-400
       prose-figcaption:bg-[#ededed] dark:prose-figcaption:bg-[#161616]"
     >
