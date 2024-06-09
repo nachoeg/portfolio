@@ -21,9 +21,7 @@ import SectionTitle from "../../components/SectionTitle.astro";
               title,
               description,
               tags,
-              link,
-              github,
-              projectLink,
+              projectUrl,
               date,
             }) => (
               <li class="relative ms-4 mb-10 flex flex-col gap-4 ">
@@ -45,9 +43,8 @@ import SectionTitle from "../../components/SectionTitle.astro";
                   title={title}
                   description={description}
                   tags={tags}
-                  link={link}
-                  github={github}
-                  projectLink={projectLink}
+                  projectUrl={projectUrl}
+                  class="animation-reveal-scroll"
                 />
               </li>
             )

@@ -65,8 +65,29 @@ const { title, description } = Astro.props;
         flex-direction: column;
         place-content: center;
         min-height: 100vh;
-        overscroll-behavior: none;
+        /* --sb-thumb-color: #aaa;
+        --sb-size: 10px; */
       }
+      /* 
+      body::-webkit-scrollbar {
+        width: var(--sb-size);
+      }
+
+      body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 3px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 10px;
+      }
+
+      @supports not selector(::-webkit-scrollbar) {
+        body {
+          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+        }
+      } */
 
       @media (prefers-reduced-motion: no-preference) {
         @media (min-width: 640px) {
@@ -81,7 +102,16 @@ const { title, description } = Astro.props;
           }
         }
 
+        .animate-on-scroll {
+          opacity: 0;
+          transform: translateY(60px);
+        }
+
         .animation-reveal {
+          animation: reveal 1s cubic-bezier(0.72, 0, 0.12, 1) both;
+        }
+
+        .animation-reveal-hero {
           animation: reveal 1s cubic-bezier(0.72, 0, 0.12, 1) both;
         }
 
@@ -93,7 +123,7 @@ const { title, description } = Astro.props;
           animation: reveal-scroll linear both;
           animation-timeline: view();
           animation-duration: 1ms;
-          animation-range: entry 0 cover 350px;
+          animation-range: cover 0 cover 350px;
         }
 
         .animation-reveal-button-scroll {
@@ -374,5 +404,45 @@ const { title, description } = Astro.props;
       is:inline
       src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js"
     ></script>
+
+    <script>
+      document.addEventListener("astro:page-load", () => {
+        //add class animation-reveal-scroll to elements that have animate-on-scroll class, with an observer
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animation-reveal");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+          observer.observe(el);
+        });
+
+        //add class animation-reveal-button-scroll to elements that have animate-on-scroll class, with an observer
+        // const observerButton = new IntersectionObserver(
+        //   (entries) => {
+        //     entries.forEach((entry) => {
+        //       if (entry.isIntersecting) {
+        //         entry.target.classList.add("animation-reveal-button-scroll");
+        //       }
+        //     });
+        //   },
+        //   {
+        //     threshold: 0.1,
+        //   }
+        // );
+
+        // document.querySelectorAll(".animate-on-scroll-button").forEach((el) => {
+        //   observerButton.observe(el);
+        // });
+      });
+    </script>
   </body>
 </html>

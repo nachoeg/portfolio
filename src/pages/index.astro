@@ -28,7 +28,7 @@ import ScrollUpButton from "@/components/ScrollUpButton.astro";
   </Fragment>
 
   <Fragment slot="footer">
-    <Footer padding="py-28" />
+    <Footer padding="pb-28 sm:py-10" />
   </Fragment>
 
   <Fragment slot="scroll-up">
@@ -44,7 +44,7 @@ import ScrollUpButton from "@/components/ScrollUpButton.astro";
   </HeroContainer>
   <main class="mx-2 sm:mx-4">
     <SectionContainer id="projects">
-      <SectionTitle>
+      <SectionTitle class="animate-on-scroll">
         <CodeIcon class="size-8 flex-shrink-0" />
         <span class="overflow-clip text-ellipsis text-nowrap"> Proyectos </span>
         <LinkButton class="ml-auto" href="/projects">
@@ -58,7 +58,7 @@ import ScrollUpButton from "@/components/ScrollUpButton.astro";
       <LinkButton
         expand
         rounded
-        class="mt-6 py-3 animation-reveal-scroll"
+        class="mt-6 py-3 animate-on-scroll"
         href="/projects"
       >
         <Folders class="size-6" />
@@ -67,7 +67,7 @@ import ScrollUpButton from "@/components/ScrollUpButton.astro";
     </SectionContainer>
 
     <SectionContainer id="about">
-      <SectionTitle>
+      <SectionTitle class="animate-on-scroll">
         <Profile class="size-8" />
         Sobre mí
       </SectionTitle>
@@ -75,7 +75,7 @@ import ScrollUpButton from "@/components/ScrollUpButton.astro";
     </SectionContainer>
 
     <SectionContainer id="contact">
-      <SectionTitle>
+      <SectionTitle class="animate-on-scroll">
         <Mail class="size-8" />
         Contacto
       </SectionTitle>

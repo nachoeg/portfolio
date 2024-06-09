@@ -6,17 +6,7 @@ import PROJECTS from "../data/projects.js";
 <div class="flex flex-wrap gap-6 relative">
   {
     PROJECTS.filter((p) => p.selected).map(
-      ({
-        id,
-        image,
-        imagePosition,
-        title,
-        description,
-        tags,
-        link,
-        github,
-        projectLink,
-      }) => (
+      ({ id, image, imagePosition, title, description, tags, projectUrl }) => (
         <ProjectCard
           id={id}
           image={image}
@@ -24,9 +14,8 @@ import PROJECTS from "../data/projects.js";
           title={title}
           description={description}
           tags={tags}
-          link={link}
-          github={github}
-          projectLink={projectLink}
+          projectUrl={projectUrl}
+          class={"animate-on-scroll"}
         />
       )
     )

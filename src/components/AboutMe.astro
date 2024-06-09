@@ -15,7 +15,7 @@ const edad = calculateAge(new Date(1999, 4, 4));
   class="flex flex-col sm:flex-row justify-center gap-x-2 lg:gap-x-6 gap-y-6 text-neutral-800 dark:text-neutral-300 relative"
 >
   <div
-    class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animation-reveal-scroll"
+    class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animate-on-scroll"
   >
     <div class="overflow-hidden rounded-2xl h-[400px]">
       <img
@@ -30,13 +30,13 @@ const edad = calculateAge(new Date(1999, 4, 4));
     class="flex flex-col gap-8 px-2 [&_h5]:font-semibold [&_h5]:pb-1 [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold rounded-3xl"
   >
     <div>
-      <h5 class="text-lg animation-reveal-scroll">Mi historia</h5>
-      <p class="animation-reveal-scroll lg:pr-3">
+      <h5 class="text-lg animate-on-scroll">Mi historia</h5>
+      <p class="animate-on-scroll lg:pr-3">
         Mi nombre es Ignacio, tengo {edad} años y soy de Buenos Aires, Argentina.
         Antes del desarrollo de software estudié distintas carreras de diferentes
         areas, hasta que finalmente encontré mi lugar en el mundo de la programación.
       </p>
-      <p class="mt-2 animation-reveal-scroll">
+      <p class="mt-2 animate-on-scroll">
         En el año 2025 me gradué de <strong
           >Analista Programador Universitario</strong
         >
@@ -46,14 +46,14 @@ const edad = calculateAge(new Date(1999, 4, 4));
     </div>
 
     <div>
-      <h5 class="text-lg animation-reveal-scroll">Tecnologías</h5>
-      <div class="animation-reveal-scroll">
+      <h5 class="text-lg animate-on-scroll">Tecnologías</h5>
+      <div class="animate-on-scroll">
         <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
           Stack principal
         </h6>
         <Tags tags={STACK.primary} />
       </div>
-      <div class="animation-reveal-scroll mt-4">
+      <div class="animate-on-scroll mt-4">
         <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
           Conocimientos básicos
         </h6>
@@ -62,8 +62,8 @@ const edad = calculateAge(new Date(1999, 4, 4));
     </div>
 
     <div>
-      <h5 class="text-lg animation-reveal-scroll">Hobbies</h5>
-      <p class="animation-reveal-scroll">
+      <h5 class="text-lg animate-on-scroll">Hobbies</h5>
+      <p class="animate-on-scroll">
         La música me apasiona. Disfruto escuchando, tocando, y a veces incluso
         <a
           class="hover:underline text-blue-800 dark:text-blue-400"
