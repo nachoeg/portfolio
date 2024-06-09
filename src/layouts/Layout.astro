@@ -65,29 +65,41 @@ const { title, description } = Astro.props;
         flex-direction: column;
         place-content: center;
         min-height: 100vh;
-        /* --sb-thumb-color: #aaa;
-        --sb-size: 10px; */
+        --sb-size: 16px;
+        --sb-thumb-color: #ccc;
+        --sb-thumb-color-hover: #aaa;
+        --sb-background: #fafafa;
       }
-      /* 
+
+      .dark body {
+        --sb-thumb-color: #333;
+        --sb-thumb-color-hover: #555;
+        --sb-background: #0a0a0a;
+      }
+
       body::-webkit-scrollbar {
         width: var(--sb-size);
       }
 
       body::-webkit-scrollbar-track {
-        background: var(--sb-track-color);
-        border-radius: 3px;
+        background: var(--sb-background);
       }
 
       body::-webkit-scrollbar-thumb {
+        border: 4px solid var(--sb-background);
         background: var(--sb-thumb-color);
         border-radius: 10px;
       }
 
+      body::-webkit-scrollbar-thumb:hover {
+        background: var(--sb-thumb-color-hover);
+      }
+
       @supports not selector(::-webkit-scrollbar) {
         body {
-          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+          scrollbar-color: var(--sb-thumb-color) var(--sb-background);
         }
-      } */
+      }
 
       @media (prefers-reduced-motion: no-preference) {
         @media (min-width: 640px) {
