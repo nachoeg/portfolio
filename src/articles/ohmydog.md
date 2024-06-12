@@ -15,24 +15,24 @@ Proyecto grupal propuesto por la materia de **Ingeniería de Software 2** por la
 <details>
   <summary> Consigna del proyecto </summary>
 
-> Realización de un proyecto (en grupo) pasando por todas sus etapas:
->
-> 1. Contacto con el cliente para conocer sus necesidades
-> 2. Documentar toda la información obtenida y otras características del proyecto
-> 3. Armar lista de tareas a realizar y estimar tiempos
-> 4. Desarrollar el sistema en partes
-> 5. Mostrar cada una de esas partes al cliente y obtener feedback
-> 6. Analizar resultado final obtenido / resultado esperado
->
-> Un día van a la facultad y encuentran el siguiente anuncio en cartelera:
->
-> El año pasado, junto con mi colega Lucía, abrimos una veterinaria exclusiva para perros. Nos ha ido muy bien y, aparte de dar el servicio de veterinaria clásico, tenemos ganas de expandir nuestro negocio y sumar otros servicios que ayuden a vincular a las personas con perritos: adopción, pérdida y búsqueda de perros, contacto con cuidadores y paseadores, entre otros.
-> Nos gustaría tener todo unificado en una misma aplicación para que, tanto nuestros clientes como personas que no lo son, tengan la posibilidad de usar nuestros servicios de una forma rápida y sencilla. ¿Alguien me puede ayudar a llevar a cabo esta idea? De ser así, me pueden contactar a ofertasproyecto@gmail.com.
-> Gracias!
-> Pedro
->
-> El grupo interesado deberá enviar un mail al correo electrónico
-> especificado para ponerse en contacto con el cliente!
+Realización de un proyecto (en grupo) pasando por todas sus etapas:
+
+1. Contacto con el cliente para conocer sus necesidades
+2. Documentar toda la información obtenida y otras características del proyecto
+3. Armar lista de tareas a realizar y estimar tiempos
+4. Desarrollar el sistema en partes
+5. Mostrar cada una de esas partes al cliente y obtener feedback
+6. Analizar resultado final obtenido / resultado esperado
+
+Un día van a la facultad y encuentran el siguiente anuncio en cartelera:
+
+El año pasado, junto con mi colega Lucía, abrimos una veterinaria exclusiva para perros. Nos ha ido muy bien y, aparte de dar el servicio de veterinaria clásico, tenemos ganas de expandir nuestro negocio y sumar otros servicios que ayuden a vincular a las personas con perritos: adopción, pérdida y búsqueda de perros, contacto con cuidadores y paseadores, entre otros.
+Nos gustaría tener todo unificado en una misma aplicación para que, tanto nuestros clientes como personas que no lo son, tengan la posibilidad de usar nuestros servicios de una forma rápida y sencilla. ¿Alguien me puede ayudar a llevar a cabo esta idea? De ser así, me pueden contactar a ofertasproyecto@gmail.com.
+Gracias!
+Pedro
+
+El grupo interesado deberá enviar un mail al correo electrónico
+especificado para ponerse en contacto con el cliente!
 
 </details>
 
