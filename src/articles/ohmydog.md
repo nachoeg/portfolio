@@ -40,12 +40,12 @@ Para poder desarrollar la aplicación, primero tuvimos que recolectar informaci�
 
 ## Documentos
 
-- [Entrevista 1](https://github.com/nachoeg/ohmydog-frontend/blob/main/documentos/Entrevista%201.pdf)
-- [Entrevista 2](https://github.com/nachoeg/ohmydog-frontend/blob/main/documentos/Entrevista%202.pdf)
-- [Épicas](https://github.com/nachoeg/ohmydog-frontend/blob/main/documentos/Epicas.pdf)
-- [Formulario](https://github.com/nachoeg/ohmydog-frontend/blob/main/documentos/Formulario.pdf)
-- [PGP](https://github.com/nachoeg/ohmydog-frontend/blob/main/documentos/PGP.pdf)
-- [SRS](https://github.com/nachoeg/ohmydog-frontend/blob/main/documentos/SRS.pdf)
+- [Entrevista 1](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Entrevista%201.pdf)
+- [Entrevista 2](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Entrevista%202.pdf)
+- [Épicas](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Epicas.pdf)
+- [Formulario](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Formulario.pdf)
+- [PGP](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/PGP.pdf)
+- [SRS](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/SRS.pdf)
 - [Historias de usuarios y Épicas](https://docs.google.com/spreadsheets/d/1MgKM998vGrZ_yDUb7xU_Y097s3BRoNG01ysYdMDWCj0/edit?usp=sharing)
 - [Presentación del proyecto](https://docs.google.com/presentation/d/1lYKr4kY5BDAVSMm8j2br_BdNCMftV7wBZwPqXtQHlu0/edit?usp=sharing)
 
