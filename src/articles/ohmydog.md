@@ -46,8 +46,8 @@ Para poder desarrollar la aplicación, primero tuvimos que recolectar informaci�
 - [Formulario](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Formulario.pdf)
 - [PGP](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/PGP.pdf)
 - [SRS](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/SRS.pdf)
-- [Historias de usuarios y Épicas](https://docs.google.com/spreadsheets/d/1MgKM998vGrZ_yDUb7xU_Y097s3BRoNG01ysYdMDWCj0/edit?usp=sharing)
-- [Presentación del proyecto](https://docs.google.com/presentation/d/1lYKr4kY5BDAVSMm8j2br_BdNCMftV7wBZwPqXtQHlu0/edit?usp=sharing)
+- [Historias de usuarios y Épicas](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Historias%20de%20Usuario.pdf)
+- [Presentación del proyecto](https://github.com/nachoeg/ohmydog-frontend/blob/main/documents/Presentacion%20del%20proyecto.pdf)
 
 ## Problemas que enfrentamos
 
