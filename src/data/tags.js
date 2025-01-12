@@ -16,6 +16,12 @@ import MySql from "../icons/MySql.astro";
 import Docker from "../icons/Docker.astro";
 import NextJS from "../icons/NextJS.astro";
 import VSCode from "../icons/VSCode.astro";
+import Angular from "../icons/Angular.astro";
+import Python from "../icons/Python.astro";
+import Flask from "../icons/Flask.astro";
+import Supabase from "../icons/Supabase.astro";
+import PostgreSQL from "../icons/PostgreSQL.astro";
+import Vue from "../icons/Vue.astro";
 
 const TAGS = {
   ASTRO: {
@@ -107,6 +113,36 @@ const TAGS = {
     name: "Visual Studio Code",
     class: "bg-[#004675] text-white",
     icon: VSCode,
+  },
+  ANGULAR: {
+    name: "Angular",
+    class: "bg-[#75001a] text-white",
+    icon: Angular,
+  },
+  PYTHON: {
+    name: "Python",
+    class: "bg-[#1f4361] text-white",
+    icon: Python,
+  },
+  FLASK: {
+    name: "Flask",
+    class: "bg-[#1d4775] text-white",
+    icon: Flask,
+  },
+  SUPABASE: {
+    name: "Supabase",
+    class: "bg-[#1e1d23] text-white",
+    icon: Supabase,
+  },
+  POSTGRESQL: {
+    name: "PostgreSQL",
+    class: "bg-[#20415c] text-white",
+    icon: PostgreSQL,
+  },
+  VUE: {
+    name: "Vue",
+    class: "bg-[#2f7354] text-white",
+    icon: Vue,
   },
 };
 
