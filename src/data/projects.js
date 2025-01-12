@@ -24,7 +24,7 @@ export const PROJECTS = [
     title: "CEDICA",
     date: "Agosto 2024",
     description:
-      "Una aplicación interna de administracion, y un portal web, para un Centro de Equitación para Personas con Discapacidad y Carenciadas",
+      "Aplicación interna de administración y portal web para un Centro de Equitación para Personas con Discapacidad y Carenciadas.",
     links: [
       {
         name: "Portal",
@@ -52,7 +52,7 @@ export const PROJECTS = [
     title: "Guillermo Portfolio",
     date: "Junio 2024",
     description:
-      "Aplicación web para la gestión de un portfolio. Permite crear proyectos, agregar imagenes y etiquetas, y visualizarlos en una galería.",
+      "Aplicación web para la gestión de un portfolio, permitiendo crear proyectos, agregar imágenes y etiquetas, y visualizarlos en una galería.",
     links: [
       {
         name: "Sitio web",
@@ -75,8 +75,7 @@ export const PROJECTS = [
     title: "Enhanced Default",
     date: "Mayo 2024",
     description:
-      "Tema de Visual Studio Code. Es el que uso personalmente, tiene algunas mejoras respecto al tema por defecto.",
-
+      "Tema de Visual Studio Code con mejoras respecto al tema por defecto.",
     links: [
       {
         name: "Repositorio",
@@ -99,9 +98,6 @@ export const PROJECTS = [
     title: "Portfolio",
     date: "Marzo 2024",
     description: "Este sitio web.",
-    links: {
-      github: "https://github.com/nachoeg/portfolio",
-    },
     links: [
       {
         name: "Repositorio",
