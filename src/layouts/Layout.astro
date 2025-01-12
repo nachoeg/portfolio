@@ -307,14 +307,11 @@ const { title, description } = Astro.props;
         }
 
         @keyframes float {
-          "0%" {
-            transform: "translateY(0)";
+          50% {
+            transform: translateY(10px);
           }
-          "50%" {
-            transform: "translateY(-10px)";
-          }
-          "100%" {
-            transform: "translateY(0)";
+          100% {
+            transform: translateY(0);
           }
         }
 
@@ -347,12 +344,32 @@ const { title, description } = Astro.props;
 
         @keyframes incline-topright {
           0% {
-            --rotateX: 25deg;
-            --rotateY: 25deg;
+            transform: perspective(500px) rotateX(0deg) rotateY(70deg);
+            transform-style: preserve-3d;
           }
           100% {
-            --rotateX: 0;
-            --rotateY: 0;
+            transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+            transform-style: preserve-3d;
+          }
+        }
+
+        @keyframes appear {
+          0% {
+            transform: translateX(-100%) scale(0);
+            opacity: 0;
+          }
+          100% {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+          }
+        }
+
+        @keyframes slide-up {
+          from {
+            transform: translateY(100%);
+          }
+          to {
+            transform: translateY(0);
           }
         }
 
@@ -391,6 +408,30 @@ const { title, description } = Astro.props;
             background: transparent;
             @apply text-neutral-400;
             @apply shadow-none;
+          }
+        }
+
+        .efecto-borde {
+          padding: 2px;
+        }
+        .efecto-borde::before {
+          background: conic-gradient(
+            rgba(244, 114, 182, 0.4) 0deg,
+            rgba(192, 132, 252, 0.4) 0deg,
+            transparent 80deg
+          );
+          animation: spin 7s linear infinite;
+          position: absolute;
+          left: -25%;
+          top: -25%;
+          height: 150%;
+          width: 150%;
+          content: "";
+        }
+
+        @keyframes spin {
+          100% {
+            transform: rotate(-360deg);
           }
         }
       }

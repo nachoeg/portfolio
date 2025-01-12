@@ -4,9 +4,10 @@ import Badge from "./Badge.astro";
 import LinkButton from "./LinkButton.astro";
 import Mail from "../icons/MailSend.astro";
 import Tooltip from "./Tooltip.astro";
+import MapPin from "../icons/MapPin.astro";
 ---
 
-<div class="wrapper">
+<div class="wrapper mx-auto md:mr-0 mt-6 md:mt-0 group">
   <div class="tracker"></div>
   <div class="tracker"></div>
   <div class="tracker"></div>
@@ -35,35 +36,25 @@ import Tooltip from "./Tooltip.astro";
   <div class="tracker"></div>
 
   <div id="profileCard">
-    <img
-      class="rounded-full shadow-xl p-1 mb-4 mt-2 size-48 bg-white/5"
-      src="/assets/foto-perfil.jpg"
-      loading={"eager"}
-      alt={personalImageAlt}
-    />
-    <h1 class="font-bold text-lg mb-0 text-center">
+    <div id="foto-perfil" class="relative">
+      <img
+        class="rounded-full shadow-xl p-1 mb-4 size-56 bg-white/5 relative"
+        src="/assets/foto-perfil.jpg"
+        loading={"eager"}
+        alt={personalImageAlt}
+      />
+      <div class="absolute bottom-2 right-0 left-0">
+        <Badge />
+      </div>
+    </div>
+
+    <h1 class="font-bold text-lg mt-5" id="nombre">
       Ignacio Escudero Gonzalez
     </h1>
-    <span class="text-neutral-800 dark:text-neutral-400 mb-3"
-      >Fullstack developer
+    <span class="flex gap-1 items-center" id="ubicacion">
+      <MapPin class="size-4" />
+      Buenos Aires, Argentina
     </span>
-    <div class="cardFooter relative flex gap-2 items-center mt-5 z-50">
-      <Badge />
-
-      <Tooltip content="Contáctate!">
-        <LinkButton
-          small
-          brighter
-          class="shadow-md"
-          rel="noopener"
-          target="_blank"
-          href="mailto:ignacioescuderogonzalez@gmail.com"
-        >
-          <span class="sr-only">Boton de contacto</span>
-          <Mail class="size-5" />
-        </LinkButton>
-      </Tooltip>
-    </div>
   </div>
 </div>
 <style>
@@ -71,18 +62,16 @@ import Tooltip from "./Tooltip.astro";
     position: relative;
     display: grid;
     grid-template: repeat(5, 1fr) / repeat(5, 1fr);
-    margin-inline: auto;
     align-items: center;
     place-self: center;
     /* outline: 4px dotted blue; */
     animation:
-      1.2s slide-right 0s both,
-      1.2s fade-in 0.2s both,
-      2.4s incline-topright both 1.2s ease-in-out;
+      1.2s appear 0s both,
+      3s float 1.8s both infinite;
   }
 
   #profileCard {
-    @apply p-3 rounded-3xl bg-[rgb(235,235,235)] dark:bg-[#121212];
+    @apply py-7 px-5 rounded-3xl bg-gray-100 dark:bg-neutral-900;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -91,6 +80,7 @@ import Tooltip from "./Tooltip.astro";
     max-width: fit-content;
     height: fit-content;
     min-width: fit-content;
+    text-align: center;
     /* opacity: 1; */
     z-index: 0;
     transform-style: preserve-3d;
@@ -99,6 +89,7 @@ import Tooltip from "./Tooltip.astro";
     grid-row: 1 / -1;
     grid-column: 1 / -1;
     transition: transform 250ms linear;
+    animation: incline-topright 1.6s;
   }
 
   #profileCard > * {
@@ -112,7 +103,7 @@ import Tooltip from "./Tooltip.astro";
     width: 100%;
     height: 100%;
     /* display: none; */
-    scale: 1.1;
+    scale: 1;
     filter: blur(25px);
     z-index: -10;
     background: linear-gradient(
@@ -126,8 +117,8 @@ import Tooltip from "./Tooltip.astro";
     transform: translateZ(-50px);
     animation:
       /* fade-in 1s both 500ms, */
-      grow 2s cubic-bezier(0, 0, 0, 1) 1.8s both,
-      glow 2s ease-in 4s infinite both alternate;
+      grow 1.4s cubic-bezier(0, 0, 0, 1) 0s both,
+      glow 1.5s ease-in 1.4s infinite both alternate;
   }
 
   #profileCard::after {
@@ -147,45 +138,43 @@ import Tooltip from "./Tooltip.astro";
     /* @apply bg-neutral-500; */
     opacity: 0.5;
     transition: all 300ms;
-    transform: translateZ(-60px);
+    transform: translateZ(-50px) translateY(-20px);
   }
 
-  .tracker:hover ~ #profileCard > img {
+  .tracker:hover ~ #profileCard > #foto-perfil {
     transform: translateZ(60px);
   }
 
-  .tracker:hover ~ #profileCard > h1 {
-    transform: translateZ(40px);
+  .tracker:hover ~ #profileCard > #nombre {
+    transform: translateZ(50px);
   }
 
-  .tracker:hover ~ #profileCard > span {
-    transform: translateZ(40px);
+  .tracker:hover ~ #profileCard > #ubicacion {
+    transform: translateZ(50px);
   }
 
-  .tracker:hover ~ #profileCard > .cardFooter {
-    transform: translateZ(20px);
+  .tracker:hover ~ #profileCard > #descripcion {
+    transform: translateZ(50px);
   }
 
-  img,
-  h1,
-  span,
-  .cardFooter {
-    animation: wave ease;
-    animation-duration: 0.6s;
+  #foto-perfil,
+  #nombre,
+  #ubicacion,
+  #descripcion {
+    animation-duration: 0.8s;
   }
 
-  img {
-    animation-delay: 0.8s;
-  }
-
-  h1 {
-    animation-delay: 0.9s;
-  }
-  span {
-    animation-delay: 0.9s;
-  }
-  .cardFooter {
+  #foto-perfil {
     animation-delay: 1s;
+  }
+
+  #nombre,
+  #ubicacion {
+    animation-delay: 1.1s;
+  }
+
+  #descripcion {
+    animation-delay: 2.2s;
   }
 
   .tracker {
@@ -318,35 +307,30 @@ import Tooltip from "./Tooltip.astro";
     grid-column: 1 / 2;
     grid-row: 5 / 6;
     inset: 0;
-    bottom: 50px;
   }
 
   .tracker:nth-child(22) {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
     inset: 0;
-    bottom: 50px;
   }
 
   .tracker:nth-child(23) {
     grid-column: 3 / 4;
     grid-row: 5 / 6;
     inset: 0;
-    bottom: 50px;
   }
 
   .tracker:nth-child(24) {
     grid-column: 4 / 5;
     grid-row: 5 / 6;
     inset: 0;
-    bottom: 50px;
   }
 
   .tracker:nth-child(25) {
     grid-column: 5 / 6;
     grid-row: 5 / 6;
     inset: 0;
-    bottom: 50px;
   }
 
   .tracker:nth-child(1):hover ~ #profileCard {

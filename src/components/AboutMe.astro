@@ -14,18 +14,6 @@ const edad = calculateAge(new Date(1999, 4, 4));
 <article
   class="flex flex-col sm:flex-row justify-center gap-x-2 lg:gap-x-6 gap-y-6 text-neutral-800 dark:text-neutral-300 relative"
 >
-  <div
-    class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animate-on-scroll"
-  >
-    <div class="overflow-hidden rounded-2xl h-[400px]">
-      <img
-        src="/assets/foto-perfil.jpg"
-        alt={personalImageAlt}
-        class="w-full h-full md:self-start rounded-2xl object-cover object-bottom cursor-pointer hover-hover:active:scale-105 hover-hover:active:saturate-150 transition-all"
-      />
-    </div>
-  </div>
-
   <aside
     class="flex flex-col gap-8 px-2 [&_h5]:font-semibold [&_h5]:pb-1 [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold rounded-3xl"
   >
@@ -56,13 +44,13 @@ const edad = calculateAge(new Date(1999, 4, 4));
       <h5 class="text-lg animate-on-scroll">Tecnologías</h5>
       <div class="animate-on-scroll">
         <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
-          Stack principal
+          Las que más utilizo
         </h6>
         <Tags tags={STACK.primary} />
       </div>
       <div class="animate-on-scroll mt-4">
         <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
-          Conocimientos básicos
+          Utilicé por lo menos una vez
         </h6>
         <Tags tags={STACK.secondary} />
       </div>
@@ -72,14 +60,20 @@ const edad = calculateAge(new Date(1999, 4, 4));
       <h5 class="text-lg animate-on-scroll">Hobbies</h5>
       <p class="animate-on-scroll">
         La música me apasiona. Disfruto escuchando, tocando, y a veces incluso
-        <a
-          class="hover:underline text-blue-800 dark:text-blue-400"
-          rel="noopener"
-          target="_blank"
-          href="https://soundcloud.com/nacho-escudero-g/">produciendo</a
-        >! Además en mi tiempo libre me gusta leer, entrenar y hacer deporte, en
-        especial el fútbol y el basket.
+        produciendo! Además en mi tiempo libre me gusta leer, entrenar y hacer
+        deporte, en especial el fútbol y el basket.
       </p>
     </div>
   </aside>
+  <div
+    class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animate-on-scroll"
+  >
+    <div class="overflow-hidden rounded-2xl h-[400px]">
+      <img
+        src="/assets/foto-perfil.jpg"
+        alt={personalImageAlt}
+        class="w-full h-full md:self-start rounded-2xl object-cover object-bottom cursor-pointer hover-hover:active:scale-105 hover-hover:active:saturate-150 transition-all"
+      />
+    </div>
+  </div>
 </article>

@@ -9,18 +9,20 @@ import LinkButton from "../components/LinkButton.astro";
 <div
   class="parent w-full h-96 gap-2 p-2 rounded-3xl bg-black/5 dark:bg-white/5 text-black dark:text-white animate-on-scroll"
 >
-  <div class="child animate-on-scroll">
-    <LinkButton
-      brighter
-      expand
-      rounded
-      target="_blank"
-      rel="noopener"
-      href="mailto:ignacioescuderogonzalez@gmail.com"
-    >
-      <Mail class="size-7 sm:size-9" />
-      <span class="text-2xl">Email</span>
-    </LinkButton>
+  <div class="child animate-on-scroll overflow-hidden rounded-2xl">
+    <div class="h-full w-full efecto-borde">
+      <LinkButton
+        brighter
+        expand
+        rounded
+        target="_blank"
+        rel="noopener"
+        href="mailto:ignacioescuderogonzalez@gmail.com"
+      >
+        <Mail class="size-7 sm:size-9" />
+        <span class="text-2xl">Email</span>
+      </LinkButton>
+    </div>
   </div>
   <div class="child animate-on-scroll">
     <LinkButton disabled expand rounded href="/">
