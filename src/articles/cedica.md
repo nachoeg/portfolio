@@ -1,6 +1,6 @@
 ## Propuesta
 
-Proyecto grupal propuesto por la materia de Proyecto de Software por la Facultad de Informática de la UNLP, con la finalidad será el de **simular un entorno profesional** y desarrollar una aplicación web integrando distintas
+Proyecto grupal propuesto por la materia de Proyecto de Software por la Facultad de Informática de la UNLP, con la finalidad de **simular un entorno profesional** y desarrollar una aplicación web integrando distintas
 herramientas y tecnologías.
 
 ## Objetivos
