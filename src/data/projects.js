@@ -118,12 +118,12 @@ export const PROJECTS = [
       "Aplicación para la gestión de una veterinaria, que ofrece servicios de consulta, adopciones, perros perdidos, campañas benéficas y turnos.",
     links: [
       {
-        name: "Repositorio frontend",
+        name: "Frontend",
         url: "https://github.com/nachoeg/ohmydog-frontend",
         icon: "github",
       },
       {
-        name: "Repositorio backend",
+        name: "Backend",
         url: "https://github.com/nachoeg/ohmydog-backend",
         icon: "github",
       },
@@ -131,7 +131,7 @@ export const PROJECTS = [
     projectUrl: "/projects/ohmydog",
     image: "/assets/ohmydog.webp",
     imagePosition: "object-left",
-    tags: [TAGS.REACT, TAGS.MUI, TAGS.QUARKUS],
+    tags: [TAGS.REACT, TAGS.MUI, TAGS.QUARKUS, TAGS.JAVA],
   },
   {
     id: "portal-de-juegos",
