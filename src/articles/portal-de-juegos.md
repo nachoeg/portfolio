@@ -67,7 +67,7 @@ Los juegos que deben implementarse son los que siguen.
 
 </figure>
 
-## Fotos
+## Capturas
 
 <figure>
 

@@ -1,7 +1,7 @@
 ---
 import type { GetStaticPaths } from "astro";
 import Layout from "../../layouts/Layout.astro";
-import PROJECTS from "../../data/projects.js";
+import { PROJECTS } from "../../data/projects.js";
 import Tags from "../../components/Tags.astro";
 import LinkButton from "../../components/LinkButton.astro";
 import World from "../../icons/World.astro";
@@ -61,43 +61,20 @@ if (!info) {
         <p>Links</p>
         <div class="flex flex-col gap-1 items-center">
           {
-            info.links && info.links.website && (
-              <LinkButton
-                target="_blank"
-                rel="noopener"
-                href={info.links.website}
-                small
-              >
-                Sitio web
-                <World class="size-5" />
-              </LinkButton>
-            )
-          }
-          {
-            info.links && info.links.github && (
-              <LinkButton
-                target="_blank"
-                rel="noopener"
-                href={info.links.github}
-                small
-              >
-                Repositorio
-                <Github class="size-5 " />
-              </LinkButton>
-            )
-          }
-          {
-            info.links && info.links.marketplace && (
-              <LinkButton
-                target="_blank"
-                rel="noopener"
-                href={info.links.marketplace}
-                small
-              >
-                Marketplace
-                <VSCodeOutlined class="size-5" />
-              </LinkButton>
-            )
+            info.links &&
+              info.links.map((link) => (
+                <LinkButton
+                  target="_blank"
+                  rel="noopener"
+                  href={link.url}
+                  small
+                >
+                  {link.name}
+                  {link.icon === "link" && <World class="size-5" />}
+                  {link.icon === "github" && <Github class="size-5" />}
+                  {link.icon === "vscode" && <VSCodeOutlined class="size-5" />}
+                </LinkButton>
+              ))
           }
           {!info.links && "No hay links disponibles"}
         </div>

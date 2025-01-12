@@ -55,7 +55,7 @@ Para poder desarrollar la aplicación, primero tuvimos que recolectar informaci�
 - Obtención exacta de los requerimientos del cliente
 - Aprender lenguajes y frameworks durante el desarrollo
 
-## Fotos
+## Capturas de pantalla
 
 <figure>
 

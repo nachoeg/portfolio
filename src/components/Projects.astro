@@ -1,11 +1,11 @@
 ---
 import ProjectCard from "./ProjectCard.astro";
-import PROJECTS from "../data/projects.js";
+import { SELECTED_PROJECTS } from "../data/projects.js";
 ---
 
 <div class="flex flex-wrap gap-6 relative">
   {
-    PROJECTS.filter((p) => p.selected).map(
+    SELECTED_PROJECTS.map(
       ({ id, image, imagePosition, title, description, tags, projectUrl }) => (
         <ProjectCard
           id={id}
