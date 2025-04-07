@@ -22,6 +22,7 @@ import Flask from "../icons/Flask.astro";
 import Supabase from "../icons/Supabase.astro";
 import PostgreSQL from "../icons/PostgreSQL.astro";
 import Vue from "../icons/Vue.astro";
+import Shadcn from "@/icons/Shadcn.astro";
 
 const TAGS = {
   ASTRO: {
@@ -143,6 +144,11 @@ const TAGS = {
     name: "Vue",
     class: "bg-[#2f7354] text-white",
     icon: Vue,
+  },
+  SHADCN: {
+    name: "shadcn/ui",
+    class: "bg-[#000] border-x border-neutral-700 text-white",
+    icon: Shadcn,
   },
 };
 

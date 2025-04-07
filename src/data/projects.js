@@ -10,7 +10,7 @@ export const PROJECTS = [
     links: [
       {
         name: "Repositorio",
-        url: "https://github.com/nicohe/ttpsJava",
+        url: "https://github.com/nachoeg/que-comemos",
         icon: "github",
       },
     ],
@@ -68,7 +68,7 @@ export const PROJECTS = [
     projectUrl: "/projects/guillermo-portfolio",
     image: "/assets/guillermo-portfolio.webp",
     imagePosition: "object-center",
-    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.TAILWIND, TAGS.SUPABASE],
+    tags: [TAGS.ASTRO, TAGS.REACT, TAGS.SHADCN, TAGS.TAILWIND, TAGS.SUPABASE],
   },
   {
     id: "enhanced-default-theme",
