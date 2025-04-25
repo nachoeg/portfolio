@@ -10,19 +10,19 @@ const STACK = {
     TAGS.TYPESCRIPT,
     TAGS.JS,
     TAGS.CSS,
+    TAGS.POSTGRESQL,
     TAGS.MYSQL,
     TAGS.TAILWIND,
     TAGS.BOOTSTRAP,
     TAGS.HTML,
   ],
   secondary: [
-    TAGS.VUE,
-    TAGS.POSTGRESQL,
-    TAGS.SHADCN,
     TAGS.DOCKER,
-    TAGS.SUPABASE,
     TAGS.PYTHON,
     TAGS.FLASK,
+    TAGS.VUE,
+    TAGS.SUPABASE,
+    TAGS.SHADCN,
   ],
 };
 
