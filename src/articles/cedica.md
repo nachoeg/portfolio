@@ -27,24 +27,6 @@ La Rehabilitación Ecuestre utiliza al caballo de manera terapéutica, aprovecha
 
 </details>
 
-## Capturas portal
-
-<figure>
-
-  <img src="/assets/cedica/portal.webp">
-
-  <figcaption>Inicio</figcaption>
-
-</figure>
-
-<figure>
-
-  <img src="/assets/cedica/noticias-portal.webp">
-
-  <figcaption>Noticias desde el portal</figcaption>
-
-</figure>
-
 ## Capturas Administración
 
 <figure>
@@ -92,5 +74,23 @@ La Rehabilitación Ecuestre utiliza al caballo de manera terapéutica, aprovecha
   <img src="/assets/cedica/consultas.webp">
 
   <figcaption>Administración de consultas</figcaption>
+
+</figure>
+
+## Capturas portal
+
+<figure>
+
+  <img src="/assets/cedica/portal.webp">
+
+  <figcaption>Inicio</figcaption>
+
+</figure>
+
+<figure>
+
+  <img src="/assets/cedica/noticias-portal.webp">
+
+  <figcaption>Noticias desde el portal</figcaption>
 
 </figure>
