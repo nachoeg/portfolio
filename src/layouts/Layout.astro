@@ -7,7 +7,7 @@ interface Props {
   title: string;
   description: string;
 }
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 import SpeedInsights from "@vercel/speed-insights/astro";
 import ScrollUp from "@/components/ScrollUpButton.astro";
 import TitleButton from "@/components/TitleButton.astro";
@@ -24,7 +24,7 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href={"/favicon.svg"} />
     <meta name="generator" content={Astro.generator} />
     <title>Ignacio Escudero • {title}</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body
     class="text-neutral-950 dark:text-neutral-50 bg-neutral-50 dark:bg-neutral-950"
@@ -39,7 +39,7 @@ const { title, description } = Astro.props;
 
     <slot />
 
-    <SpeedInsights />
+    <!-- <SpeedInsights /> -->
 
     <slot name="footer">
       <Footer />
