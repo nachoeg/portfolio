@@ -22,64 +22,24 @@ import ScrollUpButton from "@/components/ScrollUpButton.astro";
 ---
 
 <Layout title="Portfolio" description="Desarrollador web fullstack">
-  <Fragment slot="header">
+  <!-- <Fragment slot="header">
     <SectionTabs classList="hidden sm:flex" />
     <TitleButton classList="flex sm:hidden" title={"Inicio"} />
-  </Fragment>
+  </Fragment> -->
 
   <Fragment slot="footer">
-    <Footer padding="pb-28 sm:py-10" />
+    <!-- <Footer padding="pb-28 sm:py-10" /> -->
   </Fragment>
 
   <Fragment slot="scroll-up">
-    <ScrollUpButton position="bottom-24 inset-x-auto" />
+    <!-- <ScrollUpButton position="bottom-24 inset-x-auto" /> -->
   </Fragment>
 
-  <BottomNavbar />
+  <!-- <BottomNavbar /> -->
 
   <HeroContainer id="hero">
     <BackgroundGradient />
 
     <Hero />
   </HeroContainer>
-  <main class="mx-2 sm:mx-4">
-    <SectionContainer id="projects">
-      <SectionTitle class="animate-on-scroll">
-        <CodeIcon class="size-8 flex-shrink-0" />
-        <span class="overflow-clip text-ellipsis text-nowrap"> Proyectos </span>
-        <LinkButton class="ml-auto" href="/projects">
-          <Arrow class="size-6" />
-          <span class="hidden xs:block text-base font-normal">Ver todos</span>
-        </LinkButton>
-      </SectionTitle>
-
-      <Projects />
-
-      <LinkButton
-        expand
-        rounded
-        class="mt-6 py-3 animate-on-scroll"
-        href="/projects"
-      >
-        <Folders class="size-6" />
-        <span class="text-lg">Ver más proyectos</span>
-      </LinkButton>
-    </SectionContainer>
-
-    <SectionContainer id="about">
-      <SectionTitle class="animate-on-scroll">
-        <Profile class="size-8" />
-        Sobre mí
-      </SectionTitle>
-      <AboutMe />
-    </SectionContainer>
-
-    <SectionContainer id="contact">
-      <SectionTitle class="animate-on-scroll">
-        <Mail class="size-8" />
-        Contacto
-      </SectionTitle>
-      <Contact />
-    </SectionContainer>
-  </main>
 </Layout>

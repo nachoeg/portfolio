@@ -1,0 +1,53 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro";
+import Layout from "@/layouts/Layout.astro";
+import LinkButton from "@/components/LinkButton.astro";
+import Projects from "@/components/Projects.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
+import CodeIcon from "@/icons/Code.astro";
+import Arrow from "@/icons/ArrowUpRight.astro";
+import Folders from "@/icons/Folders.astro";
+import Profile from "@/icons/Profile.astro";
+import Experience from "@/components/Experience.astro";
+import Briefcase from "@/icons/Briefcase.astro";
+---
+
+<Layout title="Trabajo" description="Mi experiencia laboral">
+  <main class="mx-4 pt-20 sm:pt-36">
+    <SectionContainer id="experience">
+      <SectionTitle class="animate-on-scroll">
+        <Briefcase class="size-8 flex-shrink-0" />
+        <span class="overflow-clip text-ellipsis text-nowrap">
+          Experiencia laboral
+        </span>
+      </SectionTitle>
+
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <SectionTitle class="animate-on-scroll">
+        <CodeIcon class="size-8 flex-shrink-0" />
+        <span class="overflow-clip text-ellipsis text-nowrap">
+          Proyectos seleccionados
+        </span>
+        <LinkButton class="ml-auto" href="/projects">
+          <Arrow class="size-6" />
+          <span class="hidden xs:block text-base font-normal">Ver todos</span>
+        </LinkButton>
+      </SectionTitle>
+
+      <Projects />
+
+      <LinkButton
+        expand
+        rounded
+        class="mt-6 py-3 animate-on-scroll"
+        href="/projects"
+      >
+        <Folders class="size-6" />
+        <span class="text-lg">Ver más proyectos</span>
+      </LinkButton>
+    </SectionContainer>
+  </main>
+</Layout>

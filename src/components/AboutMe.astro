@@ -18,15 +18,17 @@ const edad = calculateAge(new Date(1999, 4, 4));
     class="flex flex-col gap-8 px-2 [&_h5]:font-semibold [&_h5]:pb-1 [&>p>strong]:text-violet-800 dark:[&>p>strong]:text-violet-400 [&>p>strong]:font-bold rounded-3xl"
   >
     <div>
-      <h5 class="text-lg animate-on-scroll">Mi historia</h5>
-      <p class="animate-on-scroll lg:pr-3">
+      <h5 class="text-lg animation-reveal-hero animation-delay-1">
+        Mi historia
+      </h5>
+      <p class="animation-reveal-hero animation-delay-2 lg:pr-3">
         Mi nombre es Ignacio, tengo {edad} años y soy de Buenos Aires, Argentina.
         Antes de dedicarme al desarrollo de software, exploré distintas áreas académicas,
         lo que me permitió enriquecer mi perspectiva y descubrir mi verdadera vocación.
         Lo que más me apasiona de este campo es la posibilidad de combinar creatividad
         y lógica para resolver problemas.
       </p>
-      <p class="mt-2 animate-on-scroll">
+      <p class="mt-2 animation-reveal-hero animation-delay-3">
         Actualmente, estoy en la etapa final de la carrera de <strong
           >Analista Programador Universitario</strong
         > en la Universidad Nacional de La Plata, y planeo continuar mi formación
@@ -35,14 +37,16 @@ const edad = calculateAge(new Date(1999, 4, 4));
     </div>
 
     <div>
-      <h5 class="text-lg animate-on-scroll">Tecnologías</h5>
-      <div class="animate-on-scroll">
+      <h5 class="text-lg animation-reveal-hero animation-delay-4">
+        Tecnologías
+      </h5>
+      <div class="animation-reveal-hero animation-delay-5">
         <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
           Las que más utilizo
         </h6>
         <Tags tags={STACK.primary} />
       </div>
-      <div class="animate-on-scroll mt-4">
+      <div class="animation-reveal-hero animation-delay-6 mt-4">
         <h6 class="text-sm text-neutral-700 dark:text-neutral-400">
           Utilicé por lo menos una vez
         </h6>
@@ -51,8 +55,8 @@ const edad = calculateAge(new Date(1999, 4, 4));
     </div>
 
     <div>
-      <h5 class="text-lg animate-on-scroll">Hobbies</h5>
-      <p class="animate-on-scroll">
+      <h5 class="text-lg animation-reveal-hero animation-delay-7">Hobbies</h5>
+      <p class="animation-reveal-hero animation-delay-8">
         <!-- La música me apasiona. Disfruto escuchando, tocando, y a veces incluso
         produciendo! Además en mi tiempo libre me gusta leer, entrenar y hacer
         deporte, en especial el fútbol y el basket. -->
@@ -62,7 +66,7 @@ const edad = calculateAge(new Date(1999, 4, 4));
     </div>
   </aside>
   <div
-    class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animate-on-scroll"
+    class="w-full bg-black/5 dark:bg-white/5 p-2 rounded-3xl sm:sticky top-[calc(50%-200px)] h-fit max-w-[400px] sm:max-w-[300px] md:max-w-[270px] animation-reveal-hero animation-delay-2"
   >
     <div class="overflow-hidden rounded-2xl h-[400px]">
       <img

@@ -6,14 +6,14 @@ const { position } = Astro.props;
 <button
   onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
   class=`fixed p-1 z-50 rounded-full  ${position ?? "bottom-5 inset-x-auto"}  self-center sm:bottom-10 sm:right-10 transition-all backdrop-blur shadow-md animation-reveal-button-scroll group
-  bg-neutral-100/60 dark:bg-neutral-900/70
+  bg-gray-200 dark:bg-neutral-900/70
   text-neutral-700 dark:text-neutral-400
   hover-hover:hover:shadow-lg 
   hover-hover:hover:text-black dark:hover-hover:hover:text-white
   hover-hover:hover:bg-white dark:hover-hover:hover:bg-neutral-800
   active:p-[3px] 
   active:text-black dark:active:text-white  
-  active:bg-white dark:hover-hover:hover:bg-neutral-800`
+  active:bg-white`
 >
   <ArrowUp
     class="size-8 group-active:size-7 sm:size-10 sm:group-active:size-9 transition-all"

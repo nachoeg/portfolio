@@ -1,23 +1,24 @@
 ---
+import Mail from "@/icons/Mail.astro";
+import LinkButton from "./LinkButton.astro";
 import ProfileCard from "./ProfileCard.astro";
+import Curriculum from "@/icons/Curriculum.astro";
+import LinkedIn from "@/icons/LinkedIn.astro";
+import Github from "@/icons/Github.astro";
 ---
 
 <div
-  class="flex flex-col md:flex-row w-full pt-16 sm:pt-24 md:pt-40 text-center md:text-left justify-between md:max-w-2xl lg:max-w-4xl"
+  class="flex flex-col md:flex-row w-full pt-16 sm:pt-24 md:pt-40 text-center md:text-left justify-center items-center md:max-w-2xl lg:max-w-4xl"
 >
-  <div class="my-auto p-4">
-    <h3
-      class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] text-neutral-950 dark:text-white animation-reveal-hero flex place-items-center place-content-center md:place-content-start gap-2"
-    >
-      Hola
-      <span class="text-3xl xs:text-4xl md:text-5xl lg:text-6xl hand">👋</span>
-    </h3>
+  <div class="my-auto flex-grow p-4">
     <h1
-      class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] mb-6 md:mb-8 font-bold tracking-tight text-neutral-950 dark:text-white text-balance animation-reveal-hero animation-delay-1"
+      class="text-5xl xs:text-6xl md:text-7xl lg:text-[5.8rem] mb-6 md:mb-8 font-bold tracking-tight text-neutral-950 dark:text-white text-balance"
     >
-      Mi nombre <br /> es <span class="gradientText animation-backgroundShift"
-        >Ignacio</span
-      >.
+      <div class="animation-reveal-hero">Hola!</div>
+      <div class="animation-reveal-hero animation-delay-1">
+        Mi nombre <br /> es
+        <span class="gradientText animation-backgroundShift">Ignacio</span>.
+      </div>
     </h1>
     <p
       class="md:text-xl text-lg max-w-[30ch] mx-auto md:mx-0 text-neutral-700 dark:text-neutral-400 text-balance md:text-wrap animation-reveal-hero animation-delay-2"
@@ -26,6 +27,42 @@ import ProfileCard from "./ProfileCard.astro";
         >Licenciatura en Sistemas</b
       >.
     </p>
+    <div class="animation-reveal-hero mt-4 flex gap-2 animation-delay-3">
+      <LinkButton
+        rounded
+        target="_blank"
+        rel="noopener"
+        href="mailto:ignacioescuderogonzalez@gmail.com"
+      >
+        <Mail class="size-5" />
+        Contactame
+      </LinkButton>
+      <LinkButton
+        rounded
+        target="_blank"
+        rel="noopener"
+        href="https://docs.google.com/document/d/1WqOOm3WlPbsPD2ydXGd1ve4-GenKoidLuSngW2gS5LA/edit?usp=sharing"
+      >
+        <Curriculum class="size-5" />
+        Curriculum
+      </LinkButton>
+      <LinkButton
+        rounded
+        target="_blank"
+        rel="noopener"
+        href="https://www.linkedin.com/in/ignacio-escudero-gonzalez/"
+      >
+        <LinkedIn class="size-5 my-0.5" />
+      </LinkButton>
+      <LinkButton
+        rounded
+        target="_blank"
+        rel="noopener"
+        href="https://github.com/nachoeg"
+      >
+        <Github class="size-5 my-0.5" />
+      </LinkButton>
+    </div>
   </div>
   <ProfileCard />
 </div>

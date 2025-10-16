@@ -1,0 +1,19 @@
+---
+import AboutMe from "@/components/AboutMe.astro";
+import SectionContainer from "@/components/SectionContainer.astro";
+import SectionTitle from "@/components/SectionTitle.astro";
+import Profile from "@/icons/Profile.astro";
+import Layout from "@/layouts/Layout.astro";
+---
+
+<Layout title="Sobre mí" description="Información sobre mí">
+  <main class="mx-4 pt-20 sm:pt-36">
+    <SectionContainer id="about">
+      <SectionTitle class="animation-reveal-hero">
+        <Profile class="size-8" />
+        Sobre mí
+      </SectionTitle>
+      <AboutMe />
+    </SectionContainer>
+  </main>
+</Layout>

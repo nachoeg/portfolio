@@ -1,0 +1,39 @@
+---
+import ExperienceCard from "./ExperienceCard.astro";
+import { EXPERIENCE } from "../data/experience.js";
+---
+
+<div class="flex flex-wrap gap-6 relative">
+  {
+    EXPERIENCE.map(
+      ({
+        id,
+        image,
+        title,
+        description,
+        company,
+        location,
+        mode,
+        url,
+        startDate,
+        endDate,
+        tags,
+      }) => (
+        <ExperienceCard
+          id={id}
+          image={image}
+          title={title}
+          description={description}
+          startDate={startDate}
+          endDate={endDate}
+          company={company}
+          location={location}
+          mode={mode}
+          tags={tags}
+          url={url}
+          class={"animate-on-scroll"}
+        />
+      )
+    )
+  }
+</div>

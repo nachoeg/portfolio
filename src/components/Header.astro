@@ -1,35 +1,82 @@
 ---
 import ThemeToggle from "./ThemeToggle.astro";
-import LanguageToggle from "./LanguageToggle.astro";
-import NavBar from "./NavBar.astro";
+import Home from "@/icons/Home.astro";
+const navItems = [
+  { icon: Home, url: "/" },
+  {
+    title: "Experiencia",
+    label: "work",
+    url: "/work",
+  },
+  {
+    title: "Proyectos",
+    label: "projects",
+    url: "/projects",
+  },
+  {
+    title: "Sobre mí",
+    label: "about",
+    url: "/about",
+  },
+];
 ---
 
 <header
-  class="fixed top-0 z-50 duration-300 transition-all min-w-full sm:min-w-min min-h-12 sm:min-h-14 self-center"
+  class="fixed top-0 z-50 duration-300 transition-all min-w-min min-h-14 self-center"
 >
-  <NavBar>
+  <!-- Old navbar implementation -->
+  <!-- <NavBar>
     <slot />
     <ThemeToggle />
     <LanguageToggle />
-  </NavBar>
+  </NavBar> -->
+  <nav
+    class="flex items-center justify-center mx-auto p-1 mt-5 backdrop-blur shadow border border-neutral-200 dark:border-neutral-800/50 text-neutral-700 dark:text-neutral-400 rounded-full bg-gray-200 dark:bg-neutral-900/90"
+  >
+    {
+      navItems.map((link) => (
+        <a
+          class={`group px-4 text-center py-1 flex flex-col gap-2 rounded-full font-medium items-center justify-center text-nowrap nav-item  ${
+            (link.url == "/" && Astro.url.pathname === link.url) ||
+            (link.url !== "/" && Astro.url.pathname.startsWith(link.url))
+              ? "animation-click bg-white dark:bg-neutral-700/80 text-black dark:text-white shadow "
+              : "bg-white/0 dark:bg-neutral-800/0 "
+          }`}
+          aria-label={link.label}
+          href={link.url}
+        >
+          {link.icon && (
+            <link.icon class="size-5 icon my-0.5 hover-hover:group-hover:text-black hover-hover:dark:group-hover:text-white transition-color duration-200" />
+          )}
+          {link.title && (
+            <span class="text-base  hover-hover:group-hover:text-black hover-hover:dark:group-hover:text-white transition-color duration-200">
+              {link.title}
+            </span>
+          )}
+        </a>
+      ))
+    }
+    <ThemeToggle />
+  </nav>
 </header>
 
 <script is:inline>
-  document.addEventListener("astro:page-load", () => {
-    var prevScrollpos = window.scrollY;
-    var header = document.querySelector("header");
-    window.onscroll = function () {
-      if (window.innerWidth < 640) {
-        var currentScrollPos = window.scrollY;
-        if (prevScrollpos > currentScrollPos) {
-          header.style.top = "0";
-        } else {
-          header.style.top = "-60px";
-        }
-        prevScrollpos = currentScrollPos;
-      } else {
-        header.style.top = "0";
-      }
-    };
-  });
+  //   document.addEventListener("astro:page-load", () => {
+  //     var prevScrollpos = window.scrollY;
+  //     var header = document.querySelector("header");
+  //     if (window.innerWidth < 640) {
+  //       window.onscroll = function () {
+  //         var currentScrollPos = window.scrollY;
+  //         if (prevScrollpos > currentScrollPos) {
+  //           header.style.top = "0";
+  //         } else {
+  //           header.style.top = "-60px";
+  //         }
+  //         prevScrollpos = currentScrollPos;
+  //       };
+  //     } else {
+  //       header.style.top = "0";
+  //     }
+  //   });
+  //
 </script>

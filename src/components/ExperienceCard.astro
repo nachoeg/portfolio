@@ -1,0 +1,64 @@
+---
+import Tags from "./Tags.astro";
+const {
+  id,
+  image,
+  title,
+  url,
+  description,
+  startDate,
+  endDate,
+  company,
+  location,
+  mode,
+  tags,
+  class: className,
+} = Astro.props;
+---
+
+<article
+  class=`group w-full relative rounded-3xl  duration-300
+  text-neutral-900 bg-black/5 hover:bg-neutral-200
+  dark:text-white dark:bg-white/5 dark:hover:bg-white/10 ${className}`
+>
+  <div class="rounded-3xl p-2 sm:p-3">
+    <a
+      href={url}
+      class="flex flex-col justify-between relative"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div class="flex flex-row-reverse justify-end">
+        <div class="flex flex-col">
+          <div class="p-2 flex flex-col">
+            <h1 class="text-xl sm:text-2xl font-bold">
+              {title}
+            </h1>
+            <p>{company}</p>
+            <div class="mt-1 text-sm text-gray-500 dark:text-gray-400">
+              <p>{startDate} - {endDate}</p>
+              <p>{location} · {mode}</p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 mr-1 h-28 rounded-2xl overflow-hidden">
+          <img
+            alt={title}
+            loading={"eager"}
+            class=` object-cover h-full w-full  rounded-2xl transition duration-200 translate-y-0  hover-hover:group-hover:saturate-[1.25]  hover-hover:group-hover:scale-[1.03]`
+            src={image}
+          />
+        </div>
+      </div>
+      <div class="p-1 pe-6">
+        <div
+          class="text-gray-700 dark:text-gray-400 text-sm xs:text-base text-pretty mt-2"
+        >
+          {description}
+        </div>
+
+        {tags && <Tags tags={tags} />}
+      </div>
+    </a>
+  </div>
+</article>

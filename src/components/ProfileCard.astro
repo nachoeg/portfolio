@@ -1,9 +1,6 @@
 ---
 const personalImageAlt = "Ignacio Escudero Gonzalez";
 import Badge from "./Badge.astro";
-import LinkButton from "./LinkButton.astro";
-import Mail from "../icons/MailSend.astro";
-import Tooltip from "./Tooltip.astro";
 import MapPin from "../icons/MapPin.astro";
 ---
 
@@ -35,7 +32,10 @@ import MapPin from "../icons/MapPin.astro";
   <div class="tracker"></div>
   <div class="tracker"></div>
 
-  <div id="profileCard">
+  <div
+    id="profileCard"
+    class="border-x border-violet-200 dark:border-neutral-800"
+  >
     <div id="foto-perfil" class="relative">
       <img
         class="rounded-full shadow-xl p-1 mb-4 size-56 bg-white/5 relative"
@@ -71,7 +71,7 @@ import MapPin from "../icons/MapPin.astro";
   }
 
   #profileCard {
-    @apply py-7 px-5 rounded-3xl bg-gray-100 dark:bg-neutral-900;
+    @apply py-7 px-5 rounded-3xl bg-white dark:bg-neutral-900;
     display: flex;
     position: relative;
     flex-direction: column;

@@ -30,10 +30,11 @@ const { title, description } = Astro.props;
     class="text-neutral-950 dark:text-neutral-50 bg-neutral-50 dark:bg-neutral-950"
   >
     <Header>
-      <slot name="header">
+      <!-- Old navbar implementation -->
+      <!-- <slot name="header">
         <BackButton />
         <TitleButton title={title} />
-      </slot>
+      </slot> -->
     </Header>
 
     <slot />
@@ -162,6 +163,10 @@ const { title, description } = Astro.props;
 
         .animation-float {
           animation: float 1s ease-in-out infinite;
+        }
+
+        .animation-click {
+          animation: click 0.5s ease both;
         }
 
         .animation-delay-1 {
@@ -300,9 +305,18 @@ const { title, description } = Astro.props;
           }
         }
 
-        @keyframes glow {
-          to {
+        @keyframes click {
+          0% {
+            padding: 0.25rem 1rem;
+            scale: 1;
+          }
+          50% {
+            padding: 0.2rem 0.8rem;
             scale: 0.9;
+          }
+          100% {
+            padding: 0.25rem 1rem;
+            scale: 1;
           }
         }
 

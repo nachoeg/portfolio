@@ -14,7 +14,7 @@ import Tags from "./Tags.astro";
 ---
 
 <article
-  class=`group max-h-[600px] w-full relative rounded-3xl lg:text-end duration-300
+  class=`group max-h-[600px] w-full relative rounded-3xl duration-300
   text-neutral-900 bg-black/5 hover:bg-neutral-200
   dark:text-white dark:bg-white/5 dark:hover:bg-white/10 ${className}`
   transition:name={`project${id}`}
@@ -40,12 +40,12 @@ import Tags from "./Tags.astro";
           <h1 class="text-xl sm:text-4xl font-bold">
             {title}
           </h1>
-          <Tags classList="lg:justify-end mt-3" tags={tags} />
           <div
-            class="text-gray-700 dark:text-gray-400 text-sm xs:text-base text-pretty lg:text-balance mt-3 sm:mt-6 lg:mb-0"
+            class="text-gray-700 dark:text-gray-400 text-sm xs:text-base text-pretty lg:text-balance mt-3 lg:mb-0"
           >
             {description}
           </div>
+          <Tags classList="mt-3" tags={tags} />
         </div>
         <div
           class="hidden lg:block opacity-0 group-hover:opacity-100 group-hover:scale-100 scale-0 transition-all duration-300 absolute bottom-2 right-2 bg-white dark:bg-neutral-900 p-4 rounded-full"
