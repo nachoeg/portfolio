@@ -1,20 +1,26 @@
 ---
+import Briefcase from "@/icons/Briefcase.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 import Home from "@/icons/Home.astro";
+import Code from "@/icons/Code.astro";
+import Profile from "@/icons/Profile.astro";
 const navItems = [
   { icon: Home, url: "/" },
   {
     title: "Experiencia",
+    icon: Briefcase,
     label: "work",
     url: "/work",
   },
   {
     title: "Proyectos",
+    icon: Code,
     label: "projects",
     url: "/projects",
   },
   {
     title: "Sobre mí",
+    icon: Profile,
     label: "about",
     url: "/about",
   },
@@ -22,7 +28,7 @@ const navItems = [
 ---
 
 <header
-  class="fixed top-0 z-50 duration-300 transition-all min-w-min min-h-14 self-center"
+  class="fixed top-0 z-50 duration-300 transition-all w-min min-w-min min-h-14 self-center"
 >
   <!-- Old navbar implementation -->
   <!-- <NavBar>
@@ -46,10 +52,12 @@ const navItems = [
           href={link.url}
         >
           {link.icon && (
-            <link.icon class="size-5 icon my-0.5 hover-hover:group-hover:text-black hover-hover:dark:group-hover:text-white transition-color duration-200" />
+            <link.icon
+              class={`size-5 icon my-0.5 hover-hover:group-hover:text-black hover-hover:dark:group-hover:text-white transition-color duration-200 ${link.url !== "/" ? "block sm:hidden" : ""}`}
+            />
           )}
           {link.title && (
-            <span class="text-base  hover-hover:group-hover:text-black hover-hover:dark:group-hover:text-white transition-color duration-200">
+            <span class="text-base hidden sm:block hover-hover:group-hover:text-black hover-hover:dark:group-hover:text-white transition-color duration-200">
               {link.title}
             </span>
           )}
