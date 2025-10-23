@@ -9,9 +9,11 @@ import SectionTitle from "@/components/SectionTitle.astro";
 <Layout title="Proyectos" description="Lista completa de proyectos">
   <main class="mx-4 pt-20 sm:pt-36">
     <SectionContainer>
-      <SectionTitle>Todos mis proyectos</SectionTitle>
+      <SectionTitle class="animate-on-scroll">Todos mis proyectos</SectionTitle>
 
-      <ol class="relative border-s border-neutral-200 dark:border-neutral-800">
+      <ol
+        class="animate-on-scroll relative border-s border-neutral-200 dark:border-neutral-800"
+      >
         {
           PROJECTS.map(
             ({
