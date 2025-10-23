@@ -5,7 +5,7 @@ import Home from "@/icons/Home.astro";
 import Code from "@/icons/Code.astro";
 import Profile from "@/icons/Profile.astro";
 const navItems = [
-  { icon: Home, url: "/" },
+  { icon: Home, url: "/", label: "home" },
   {
     title: "Experiencia",
     icon: Briefcase,
@@ -51,6 +51,7 @@ const navItems = [
           }`}
           aria-label={link.label}
           href={link.url}
+          transition:name="header-link-{link.label}"
         >
           {link.icon && (
             <link.icon
