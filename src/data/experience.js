@@ -7,12 +7,20 @@ export const EXPERIENCE = [
     company: "CeSPI",
     title: "Desarrollador Java Backend/Frontend Web Jr.",
     description:
-      "Trabaje en el desarrollo y mantenimiento de SEM (Solución de Estacionamiento Medido), una aplicación web para la gestión de estacionamientos medidos utilizada en todo el país. Implemente nuevas funcionalidades, desde el frontend con Angular y Bootstrap, hasta el backend con Spring Boot y Java. Además, hice migraciones en la base de datos MySQL.",
+      "Trabajé en el desarrollo y mantenimiento de SEM (Solución de Estacionamiento Medido), una aplicación web para la gestión de estacionamientos medidos utilizada en todo el país. Implementé nuevas funcionalidades, desde el frontend hasta el backend, realicé migraciones en la base de datos y brindé soporte técnico a los municipios.",
     location: "La Plata, Argentina",
     mode: "Híbrido",
     url: "https://www.cespi.unlp.edu.ar/",
     startDate: "Marzo 2025",
     endDate: "Actualidad",
-    tags: [TAGS.SPRING, TAGS.JAVA, TAGS.MYSQL, TAGS.ANGULAR, TAGS.BOOTSTRAP],
+    tags: [
+      TAGS.SPRING,
+      TAGS.JAVA,
+      TAGS.POSTGRESQL,
+      TAGS.ANGULAR,
+      TAGS.TYPESCRIPT,
+      TAGS.JS,
+      TAGS.BOOTSTRAP,
+    ],
   },
 ];
