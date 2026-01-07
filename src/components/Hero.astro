@@ -5,6 +5,7 @@ import ProfileCard from "./ProfileCard.astro";
 import Curriculum from "@/icons/Curriculum.astro";
 import LinkedIn from "@/icons/LinkedIn.astro";
 import Github from "@/icons/Github.astro";
+import { SOCIAL_LINKS } from "@/data/social_links.js";
 ---
 
 <div
@@ -34,17 +35,12 @@ import Github from "@/icons/Github.astro";
         rounded
         target="_blank"
         rel="noopener"
-        href="mailto:ignacioescuderogonzalez@gmail.com"
+        href={SOCIAL_LINKS.MAIL}
       >
         <Mail class="size-5" />
         Contactame
       </LinkButton>
-      <LinkButton
-        rounded
-        target="_blank"
-        rel="noopener"
-        href="https://docs.google.com/document/d/1WqOOm3WlPbsPD2ydXGd1ve4-GenKoidLuSngW2gS5LA/edit?usp=sharing"
-      >
+      <LinkButton rounded target="_blank" rel="noopener" href={SOCIAL_LINKS.CV}>
         <Curriculum class="size-5" />
         Curriculum
       </LinkButton>
@@ -52,7 +48,7 @@ import Github from "@/icons/Github.astro";
         rounded
         target="_blank"
         rel="noopener"
-        href="https://www.linkedin.com/in/ignacio-escudero-gonzalez/"
+        href={SOCIAL_LINKS.LINKEDIN}
       >
         <LinkedIn class="size-5 my-0.5" />
       </LinkButton>
@@ -60,7 +56,7 @@ import Github from "@/icons/Github.astro";
         rounded
         target="_blank"
         rel="noopener"
-        href="https://github.com/nachoeg"
+        href={SOCIAL_LINKS.GITHUB}
       >
         <Github class="size-5 my-0.5" />
       </LinkButton>

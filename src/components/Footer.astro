@@ -1,9 +1,41 @@
 ---
 const { padding } = Astro.props;
+import { SOCIAL_LINKS } from "@/data/social_links";
+import Separator from "@/components/Separator.astro";
 ---
 
 <footer
-  class=`w-full flex justify-center text-center mt-auto ${padding ?? "py-10"} text-neutral-800 dark:text-neutral-500`
+  class=`w-full flex justify-center text-center mt-auto ${padding ?? "pt-20 pb-12"}`
 >
-  © {new Date().getFullYear()} Ignacio Escudero Gonzalez
+  <div class="">
+    © {new Date().getFullYear()} Ignacio Escudero Gonzalez
+  </div>
+  <Separator />
+  <a
+    href={SOCIAL_LINKS.MAIL}
+    target="_blank"
+    rel="noopener"
+    class="hover:underline underline-offset-4 font-medium">Email</a
+  >
+  <Separator />
+  <a
+    href={SOCIAL_LINKS.CV}
+    target="_blank"
+    rel="noopener"
+    class="hover:underline underline-offset-4 font-medium">Curriculum</a
+  >
+  <Separator />
+  <a
+    href={SOCIAL_LINKS.GITHUB}
+    target="_blank"
+    rel="noopener"
+    class="hover:underline underline-offset-4 font-medium">GitHub</a
+  >
+  <Separator />
+  <a
+    href={SOCIAL_LINKS.LINKEDIN}
+    target="_blank"
+    rel="noopener"
+    class="hover:underline underline-offset-4 font-medium">LinkedIn</a
+  >
 </footer>
