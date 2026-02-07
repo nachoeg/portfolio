@@ -5,37 +5,45 @@ import Separator from "@/components/Separator.astro";
 ---
 
 <footer
-  class=`w-full flex justify-center text-center mt-auto ${padding ?? "pt-20 pb-12"}`
+  class=`flex flex-wrap gap-y-4 px-6 mx-auto justify-center text-center mt-auto ${padding ?? "pt-20 pb-12"}`
 >
-  <div class="">
-    © {new Date().getFullYear()} Ignacio Escudero Gonzalez
+  <div>
+    <span>© {new Date().getFullYear()} Ignacio Escudero Gonzalez</span>
   </div>
   <Separator />
-  <a
-    href={SOCIAL_LINKS.MAIL}
-    target="_blank"
-    rel="noopener"
-    class="hover:underline underline-offset-4 font-medium">Email</a
-  >
-  <Separator />
-  <a
-    href={SOCIAL_LINKS.CV}
-    target="_blank"
-    rel="noopener"
-    class="hover:underline underline-offset-4 font-medium">Curriculum</a
-  >
-  <Separator />
-  <a
-    href={SOCIAL_LINKS.GITHUB}
-    target="_blank"
-    rel="noopener"
-    class="hover:underline underline-offset-4 font-medium">GitHub</a
-  >
-  <Separator />
-  <a
-    href={SOCIAL_LINKS.LINKEDIN}
-    target="_blank"
-    rel="noopener"
-    class="hover:underline underline-offset-4 font-medium">LinkedIn</a
-  >
+  <div class="flex">
+    <a
+      href={SOCIAL_LINKS.MAIL}
+      target="_blank"
+      rel="noopener"
+      class="hover:underline underline-offset-4 font-medium">Email</a
+    >
+    <Separator />
+  </div>
+  <div class="flex">
+    <a
+      href={SOCIAL_LINKS.CV}
+      target="_blank"
+      rel="noopener"
+      class="hover:underline underline-offset-4 font-medium">Curriculum</a
+    >
+    <Separator />
+  </div>
+  <div class="flex">
+    <a
+      href={SOCIAL_LINKS.GITHUB}
+      target="_blank"
+      rel="noopener"
+      class="hover:underline underline-offset-4 font-medium">GitHub</a
+    >
+    <Separator />
+  </div>
+  <div class="flex">
+    <a
+      href={SOCIAL_LINKS.LINKEDIN}
+      target="_blank"
+      rel="noopener"
+      class="hover:underline underline-offset-4 font-medium">LinkedIn</a
+    >
+  </div>
 </footer>
