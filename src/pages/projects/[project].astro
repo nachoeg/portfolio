@@ -1,5 +1,4 @@
 ---
-import type { GetStaticPaths } from "astro";
 import Layout from "@/layouts/Layout.astro";
 import { PROJECTS } from "@/data/projects.js";
 import Tags from "@/components/Tags.astro";
@@ -7,6 +6,7 @@ import LinkButton from "@/components/LinkButton.astro";
 import World from "@/icons/World.astro";
 import Github from "@/icons/Github.astro";
 import VSCodeOutlined from "@/icons/VSCodeOutlined.astro";
+import { GetStaticPaths } from "astro/dist/types/public";
 
 export const getStaticPaths = (() => {
   const paths = PROJECTS.map((project) => ({

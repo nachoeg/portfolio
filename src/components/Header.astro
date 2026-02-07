@@ -29,7 +29,6 @@ const navItems = [
 
 <header
   class="fixed top-0 z-50 duration-300 transition-all w-min min-w-min min-h-14 self-center"
-  transition:name="header"
 >
   <!-- Old navbar implementation -->
   <!-- <NavBar>
@@ -51,7 +50,6 @@ const navItems = [
           }`}
           aria-label={link.label}
           href={link.url}
-          transition:name="header-link-{link.label}"
         >
           {link.icon && (
             <link.icon
